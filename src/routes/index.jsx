@@ -9,6 +9,7 @@ import Cari from '../views/cari.jsx';
 
 import Login from '../views/login.jsx';
 import LoginMitra from '../views/loginmitra.jsx';
+import DaftarMitra from '../views/daftarmitra.jsx';
 
 function RoutesIndex() {
     return (
@@ -22,6 +23,7 @@ function RoutesIndex() {
 
             <Route path="/login" element={<Login />} />
             <Route path="/loginmitra" element={<LoginMitra />} />
+            <Route path="/daftarmitra" element={<DaftarMitra />} />
 
 
         </Routes>

@@ -28,9 +28,7 @@ function App() {
           <div className="w-[279px] flex justify-between">
             <button className="bg-purple-600 px-[36px] py-[10px] rounded-[47px]">
               <p className="text-white">
-                <Link to="/login" className="">
-                  Masuk
-                </Link>
+                <Link to="/login" className="">Masuk</Link>
               </p>
             </button>
           </div>

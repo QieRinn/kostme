@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export default function LoginMitra() {
     return (
         <div className="loginmitra bg-cyan-700 pt-20 pb-24 flex justify-center">
@@ -26,6 +27,12 @@ export default function LoginMitra() {
                         <div className="text-center w-full">
                             <input type="submit" value="Masuk" className="bg-cyan-700 py-1 px-5 rounded-md text-white" />
                         </div>
+
+                        <br></br>
+                        <div>
+                    <p className=" text-xs text-center ">Belum punya akun KostMe?<Link to="/daftarmitra" className="no-underline hover:underline text-cyan-600">Daftar Sekarang</Link> </p> 
+                     
+                </div>
                         
 
                     </form>
