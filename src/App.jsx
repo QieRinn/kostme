@@ -36,7 +36,7 @@ function App() {
       </nav>
       <section>
         <div>
-          <p>Lorem, ipsum dolor.</p>
+          {/* <p>Lorem, ipsum dolor.</p> */}
         </div>
       </section>
 

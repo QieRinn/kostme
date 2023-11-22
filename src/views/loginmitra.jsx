@@ -30,9 +30,8 @@ export default function LoginMitra() {
 
                         <br></br>
                         <div>
-                    <p className=" text-xs text-center ">Belum punya akun KostMe?<Link to="/daftarmitra" className="no-underline hover:underline text-cyan-600">Daftar Sekarang</Link> </p> 
-                     
-                </div>
+                            <p className=" text-xs text-center ">Belum punya akun KostMe?<Link to="/daftarmitra" className="no-underline hover:underline text-cyan-600">Daftar Sekarang</Link> </p> 
+                        </div>
                         
 
                     </form>
