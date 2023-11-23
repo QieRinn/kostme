@@ -34,11 +34,6 @@ function App() {
           </div>
         </div>
       </nav>
-      <section>
-        <div>
-          {/* <p>Lorem, ipsum dolor.</p> */}
-        </div>
-      </section>
 
       <Routes />
     </>
