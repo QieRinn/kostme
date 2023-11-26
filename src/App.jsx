@@ -34,6 +34,7 @@ function App() {
           </div>
         </div>
       </nav>
+
       {/* <div>
         <img src="images/logo.png" alt="" width="186" height="42" />
       </div> */}

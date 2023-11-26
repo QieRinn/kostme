@@ -2,8 +2,10 @@ export default function Home() {
     return (
         <div className="home">
             <div className="bgimg pt-36">
+ 
                 <h1 className="font-bold text-black text-left text-xl mt-5 ml-8">bingung cara cari kos impian</h1>
                 <h1 className="font-bold text-black text-left text-3xl mt-5 ml-8 drop-shadow-lg"> CARI KAMAR KOS IDAMANMU DI PLATFORM KAMI </h1>
+
             </div>
     
             <div className="bg-cyan-700 h-10 pt-1">
@@ -132,6 +134,6 @@ export default function Home() {
                 </div>
             </div>
         </div>
-     )
+    )
 
 }
