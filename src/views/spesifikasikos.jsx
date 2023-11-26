@@ -10,7 +10,7 @@ export default function SpesifikasiKos() {
                 <div className="bg-slate-200 w-96 mt-5 rounded-md p-12 ">
                     <form action="/">
 
-                        <label for="text" className=" text-sm font-medium text-gray-900">Spesifikasi Kos</label>
+                        <label for="text" className=" text-sm p-24 font-medium text-gray-900">Spesifikasi Kos</label> <br></br><br></br>
                             <div className="relative mt-2 rounded-md flex justify-between">
                                 <input type="checkbox" name="ingatsaya" id="ingatsaya "  />
                                 <label for="ingatsaya" className=" text-sm font-medium text-gray-900 "> Standar </label>
@@ -25,11 +25,11 @@ export default function SpesifikasiKos() {
                                 <label for="ingatsaya" className="block text-sm font-medium leading-6 text-gray-900"> Termasuk Listrik  </label>
                             </div>
 
-                            <div className="relative mt-2 rounded-md  flex justify-between">
+                            <div className="relative mt-2 rounded-md  flex justify-between  ">
                                 <input type="checkbox" name="ingatsaya" id="ingatsaya "  />
                                 <label for="ingatsaya" className="block text-sm font-medium leading-6 text-gray-900"> 3x5 </label>
                                 <input type="checkbox" name="ingatsaya" id="ingatsaya "  />
-                                <label for="ingatsaya" className="block text-sm font-medium leading-6 text-gray-900"> Tidak Termasuk Listrik  </label>
+                                <label for="ingatsaya" className="block text-sm font-medium leading-6 text-gray-900     "> Tidak Termasuk Listrik  </label>
                             </div>
 
                             <div className="relative mt-2 rounded-md  flex justify-between">

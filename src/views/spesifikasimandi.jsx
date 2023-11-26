@@ -45,8 +45,8 @@ export default function SpesidikasiMandi() {
 
                         <br></br>
                         <div className=" w-full flex justify-between ">
-                            <input type="submit" value="Masuk" formaction="/spesifikasikamar" className="bg-cyan-700 py-1 px-5 rounded-md text-white flex justify-start " />
-                            <input type="submit" value="Masuk" formaction="/peraturan" className="bg-cyan-700 py-1 px-5 rounded-md text-white flex justify-end " />
+                            <input type="submit" value="Kembali" formaction="/spesifikasikamar" className="bg-cyan-700 py-1 px-5 rounded-md text-white flex justify-start " />
+                            <input type="submit" value="Lanjut " formaction="/peraturan" className="bg-cyan-700 py-1 px-5 rounded-md text-white flex justify-end " />
                         </div>
 
                         <br></br>

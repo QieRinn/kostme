@@ -2,3 +2,9 @@
   background-image: url("images/kamar.jpg");
   height: 400px;
 }
+
+.kontenimg{
+  background-image: url("images/kamar.jpg");
+  width: 5% ;
+  height: 5%;
+}

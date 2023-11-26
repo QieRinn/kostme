@@ -20,9 +20,9 @@ function App() {
                   Beranda
                 </Link>
               </p>
-              <p>Mentor</p>
-              <p>Pricing</p>
-              <p>Business</p>
+              <p>Mitra</p>
+              <p>Berita</p>
+              <p>Kontak</p>
             </div>
           </div>
           <div className="w-[279px] flex justify-between">
@@ -34,6 +34,9 @@ function App() {
           </div>
         </div>
       </nav>
+      {/* <div>
+        <img src="images/logo.png" alt="" width="186" height="42" />
+      </div> */}
       <section>
         <div>
           {/* <p>Lorem, ipsum dolor.</p> */}
