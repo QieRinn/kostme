@@ -133,7 +133,83 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </div>
+            
+            <div className="bg-cyan-700 text-white">
+                <div className="grid grid-cols-2 gap-4 ">
+                <p className="font-bold text-base mb-5 mt-10 ml-5 ">Bergabunglah dengan mitra kami dan dapatkan 
+                berbagai penawaran yang kami berikan </p>
+                </div>
+                <div className="ml-5">
+                    <p> Beberapa kelebihan bergabung denga mitra kami: </p>
+                </div>
+
+                <div className="mb-5 mt-10 ml-5">
+                    <ol type="1">
+                        <li> Fitur potongan harga iklan untuk mitra baru</li>
+                        <li> Fitur dasboard kelola kos </li>
+                        <li>Fitur pendaftan kos yang mudah</li>
+                    </ol>
+                </div>
+
+                {/* <div className="mt-10 bgimg h-96"> </div> */}
+
+                <a href="/semuakamar" className="text-black bg-white     0 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Lihat semua kamar</a>
+                <br />
+                <br />
+                <br />
+
+            </div>
+
+            {/* <div className="bg-slate-100"> */}
+                <div className="text-center">
+                    <h1 className="text-xl mt-5 font-bold">Mitra kami</h1>
+                    <h1 className="text-lg mb-5">beberpa pemilik kos yang sudeh bergabung dengan kami</h1>
+                </div>
+
+                <div className="grid grid-cols-3 gap-4">
+                    <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <div className="p-5">
+                            <p>Pak Ikhmar</p>
+                            <p>Depok</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Amet et facilisis faucibus elementum auctor accumsan vulputate. Nibh scelerisque vehicula ornare.</p>
+                            <hr />
+                            <p>Pak Ikhmar</p>
+                        </div>
+                    </div>
+                    <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <div className="p-5">
+                            <p>Pak Ikhmar</p>
+                            <p>Depok</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Amet et facilisis faucibus elementum auctor accumsa. </p>
+                            <hr />
+                            <p>Pak Ikhmar</p>
+                        </div>
+                    </div>
+                    <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <div className="p-5">
+                            <p>Pak Ikhmar</p>
+                            <p>Depok</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Amet et facilisis faucibus elementum auctor accumsa.</p>
+                            <hr />
+                            <p>Pak Ikhmar</p>
+                        </div>
+                    </div>
+                </div>
+            {/* </div> */}
+
+            <div className="bg-cyan-700">
+                <div className="grid grid-cols-4 gap-8  ml-14 ">
+                        <span> 100 </span>
+                        <span> 1367 </span>
+                        <span> 20 </span>
+                        <span> 5 </span>
+
+                </div>
+            </div>
+        </div >
     )
 
 }
