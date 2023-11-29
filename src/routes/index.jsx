@@ -2,7 +2,11 @@
 import { Routes, Route } from "react-router-dom";
 
 //import view homepage
+
 import Home from '../views/home.jsx';
+import HomeAdmin from '../views/admin/homeadmin.jsx';
+import DashboardPartner from '../views/admin/dashboardpartner.jsx';
+import HomeUser from '../views/homeuser.jsx';
 
 //import view posts index
 import Cari from '../views/cari.jsx';
@@ -22,6 +26,9 @@ function RoutesIndex() {
 
             {/* route "/" */}
             <Route path="/" element={<Home />} />
+            <Route path="/admin/homeadmin" element={<HomeAdmin />} />
+            <Route path="/admin/dashboardpartner" element={<DashboardPartner />} />
+            <Route path="/homeuser" element={<HomeUser />} />
 
             {/* route "/posts" */}
             <Route path="/cari" element={<Cari />} />

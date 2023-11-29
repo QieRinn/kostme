@@ -1,33 +1,6 @@
-import { Link } from "react-router-dom";
-
-export default function Home() {
+export default function HomeAmin() {
     return (
-        <div className="home">
-            <nav className=" flex justify-center h-[100px] ">
-                <div className="w-[1240px] flex items-center justify-between">
-                <div className="flex items-center w-[577px] justify-between">
-                    <img src="images/logo.png" alt="" width="186" height="42" />
-                    <div className="flex w-[340px] justify-between">
-                    <p>
-                        <Link to="/" className="">
-                        Beranda
-                        </Link>
-                    </p>
-                    <p>Mitra</p>
-                    <p>Berita</p>
-                    <p>Kontak</p>
-                    </div>
-                </div>
-                <div className="w-[279px] flex justify-between">
-                    <button className="bg-purple-600 px-[36px] py-[10px] rounded-[47px]">
-                    <p className="text-white">
-                        <Link to="/login" className="">Masuk</Link>
-                    </p>
-                    </button>
-                </div>
-                </div>
-            </nav>
-            
+        <div className="homeadmin">
             <div className="bgimg pt-36">
  
                 <h1 className="font-bold text-black text-left text-xl mt-5 ml-8">bingung cara cari kos impian</h1>
@@ -51,7 +24,7 @@ export default function Home() {
 
                 <div className="grid grid-cols-3 gap-4">
                     <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="../images/kamar.jpg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -163,29 +136,24 @@ export default function Home() {
             
             <div className="bg-cyan-700 text-white pt-20 pb-10 pl-10 pr-10">
                 <div className="grid grid-cols-3 gap-4  ">
-                    <div className="col-span-2 mt-10">
-                        <p className="font-bold text-base ">Bergabunglah dengan mitra kami dan dapatkan berbagai penawaran yang kami berikan </p>
-                    
-                        <p> Beberapa kelebihan bergabung denga mitra kami: </p>
+                    <div className="mt-10">
+                        <p className="font-bold text-base ">Keloala Kos anda dengan mudah dan dapat di pantau </p>
                         <br />
-
-                        <ul className="list-disc ml-5">
-                            <li> Fitur potongan harga iklan untuk mitra baru</li>
-                            <li> Fitur dasboard kelola kos </li>
-                            <li>Fitur pendaftan kos yang mudah</li>
-                        </ul>
+                        <br />
+                        <div className="flex justify-center">
+                            <a href="/admin/dashboardpartner" className="text-black bg-white hover:bg-cyan-500 font-medium rounded-lg text-sm px-5 py-2.5">Dashboard Kelola</a>
+                        </div>
                     </div>
+                    <div></div>
                     <div>
-                        <img className="object-fill w-70 h-64" src="images/kamar.jpg" />
+                        <img className="object-fill w-70 h-64" src="../images/kamar.jpg" />
                     </div>
                
                 </div>
 
                 {/* <div className="mt-10 bgimg h-96"> </div> */}
                 <br />
-                <div className="flex justify-center">
-                    <a href="/semuakamar" className="text-black bg-white hover:bg-cyan-500 font-medium rounded-lg text-sm px-5 py-2.5">Lihat semua kamar</a>
-                </div>
+                
                 
 
             </div>
@@ -265,11 +233,10 @@ export default function Home() {
             </div>
 
             <div className="col-span-3">
-
+                
 
             </div>
         </div >
-        
     )
 
 }
