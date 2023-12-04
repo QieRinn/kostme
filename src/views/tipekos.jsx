@@ -10,7 +10,7 @@ export default function DaftarKos() {
                 <div className="bg-slate-200 w-96 mt-5 rounded-md p-12 ">
                     <form action="/">
 
-                        <label for="text" className=" text-sm font-medium text-gray-900">tipe kos</label>
+                        <label for="text" className=" text-sm font-medium text-gray-900">Tipe kos</label>
                             <div className="relative mt-2 rounded-md flex justify-between">
                                 <input type="checkbox" name="ingatsaya" id="ingatsaya "  />
                                 <label for="ingatsaya" className=" text-sm font-medium text-gray-900"> Standar </label>

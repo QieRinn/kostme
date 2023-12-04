@@ -37,7 +37,7 @@ export default function SpesidikasiMandi() {
                             <div className="relative mt-2 rounded-md  flex justify-between">
                                 <input type="checkbox" name="ingatsaya" id="ingatsaya "  />
                                 <label for="ingatsaya" className="block text-sm font-medium leading-6 text-gray-900"> Kloset Jongkok </label>
-                                <input type="checkbox" name="ingatsaya" id="ingatsaya "  />
+                                <input type="checkbox" name="ingatsaya" id="ingatsaya"  />
                                 <label for="ingatsaya" className="block text-sm font-medium leading-6 text-gray-900"> Shower  </label><br></br>
                             </div>
 
