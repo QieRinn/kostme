@@ -61,8 +61,8 @@ export default function Home() {
             
             <div className="bgimg pt-36">
  
-                <h1 className="font-bold text-black text-left text-xl mt-5 ml-8">bingung cara cari kos impian</h1>
-                <h1 className="font-bold text-black text-left text-3xl mt-5 ml-8 drop-shadow-lg"> CARI KAMAR KOS IDAMANMU DI PLATFORM KAMI </h1>
+                <h1 className="font-bold text-black text-left text-xl ml-20 mb-10">Bingung cara cari kos impian</h1>
+                <h1 className="font-bold text-black text-left text-3xl ml-20 drop-shadow-lg"> CARI KAMAR KOS IDAMANMU DI PLATFORM KAMI </h1>
 
             </div>
     
@@ -80,8 +80,8 @@ export default function Home() {
 
             <div className="bg-slate-100">
                 <div>
-                    <h1 className="text-xl mt-5">Kos Standar</h1>
-                    <h1 className="font-bold text-3xl mb-5">Kamar Terbaru</h1>
+                    <h1 className="text-xl mt-5 ml-8">Kos Standar</h1>
+                    <h1 className="font-bold text-3xl mb-5 ml-8">Kamar Terbaru</h1>
                 </div>
 
                 <div className="grid grid-cols-3 gap-5">
@@ -105,12 +105,12 @@ export default function Home() {
 
                         ))
 
-                        : <div>Data tidak tersedia </div>
+                        : <div></div>
                     }
 
                 </div>
 
-                <a href="/semuakamar" className="text-white bg-cyan-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Lihat semua kamar</a>
+                <a href="/semuakamar" className="text-white bg-cyan-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ml-8">Lihat semua kamar</a>
                 <br />
                 <br />
                 <br />
@@ -195,12 +195,12 @@ export default function Home() {
                 </div>
 
                 <div className="grid grid-cols-3 gap-8">
-                    <div className="rounded-lg shadow-lg mb-10">
+                    <div className="rounded-lg shadow-lg mb-10 ml-3">
                         <img className="rounded-lg object-fill h-48 w-full" src="images/kamar.jpg" />
                         <div className="p-5">
                             <p>Pak Ikhmar</p>
                             <p>Depok</p>
-                            <p>Lorem ipsum dolor sit amet consectetur. Amet et facilisis faucibus elementum auctor accumsan vulputate. Nibh scelerisque vehicula ornare.</p>
+                            <p> Selamat datang di Kosan Pak Ikhmar, Tempat di mana kenyamanan dan keamanan menjadi prioritas utama.</p>
                             <hr />
                             <p>Pak Ikhmar</p>
                         </div>
@@ -208,21 +208,21 @@ export default function Home() {
                     <div className="rounded-lg shadow-lg mb-10">
                         <img className="rounded-lg object-fill h-48 w-full" src="images/kamar.jpg" />
                         <div className="p-5">
-                            <p>Pak Ikhmar</p>
+                            <p>Pak Umar</p>
                             <p>Depok</p>
-                            <p>Lorem ipsum dolor sit amet consectetur. Amet et facilisis faucibus elementum auctor accumsa. </p>
+                            <p>Nikmati keuntungan tinggal di kosan kami yang berlokasi strategis, dekat dengan pusat kota dan akses mudah ke transportasi umum. </p>
                             <hr />
-                            <p>Pak Ikhmar</p>
+                            <p>Pak Umar</p>
                         </div>
                     </div>
                     <div className="rounded-lg shadow-lg mb-10">
                         <img className="rounded-lg object-fill h-48 w-full" src="images/kamar.jpg" />
                         <div className="p-5">
-                            <p>Pak Ikhmar</p>
+                            <p>Pak Ronald</p>
                             <p>Depok</p>
-                            <p>Lorem ipsum dolor sit amet consectetur. Amet et facilisis faucibus elementum auctor accumsa.</p>
+                            <p>Kosan kami selalu bersih dan terawat dengan baik. Fasilitas lengkap untuk memenuhi kebutuhan harian Anda.</p>
                             <hr />
-                            <p>Pak Ikhmar</p>
+                            <p>Pak Ronald</p>
                         </div>
                     </div>
                 </div>
@@ -232,19 +232,19 @@ export default function Home() {
                 <div className="grid grid-cols-4 gap-8 pt-10 pb-10">
                         <div className="text-center text-white"> 
                             <span className="text-3xl">100</span> <br />
-                            <span>lsjfd lsdjfls flskf jl jsfl</span>
+                            <span>Total dari mitra kami</span>
                         </div>
                         <div className="text-center text-white"> 
-                            <span className="text-3xl">1367</span> <br />
-                            <span>lsjfd lsdjfls flskf jl jsfl</span>
+                            <span className="text-3xl">100+</span> <br />
+                            <span>Total dari pengguna platform kami</span>
                         </div>
                         <div className="text-center text-white"> 
-                            <span className="text-3xl">20</span> <br />
-                            <span>lsjfd lsdjfls flskf jl jsfl</span>
+                            <span className="text-3xl">35</span> <br />
+                            <span>Pengguna bar setiap bulan</span>
                         </div>
                         <div className="text-center text-white"> 
-                            <span className="text-3xl">5</span> <br />
-                            <span>lsjfd lsdjfls flskf jl jsfl</span>
+                            <span className="text-3xl">25</span> <br />
+                            <span>Kamar baru setiap minggu</span>
                         </div>
 
                 </div>
