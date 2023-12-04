@@ -1,6 +1,37 @@
-import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
+
+//import api
+import api from '../api';
+
+//import Link
+import { Link } from 'react-router-dom';
 
 export default function Home() {
+//ini state
+    const [posts, setPosts] = useState([]);
+
+    //define method
+    const fetchDataPosts = async () => {
+
+        //fetch data from API with Axios
+        await api.get('/kamarterbaru')
+            .then(response => {
+                
+                //assign response data to state "posts"
+                setPosts(response.data.data);
+            })
+        
+    }
+
+    //run hook useEffect
+    useEffect(() => {
+        
+        //call method "fetchDataPosts"
+        fetchDataPosts();
+
+    }, []);
+
+    
     return (
         <div className="home">
             <nav className=" flex justify-center h-[100px] ">
@@ -43,73 +74,40 @@ export default function Home() {
                 <img src="images/kamar.png" className="object-fill h-48 w-96" />    
             </div> */}
 
+            
+
+           
+
             <div className="bg-slate-100">
                 <div>
                     <h1 className="text-xl mt-5">Kos Standar</h1>
                     <h1 className="font-bold text-3xl mb-5">Kamar Terbaru</h1>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4">
-                    <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
-                        <div className="p-5">
-                            <p>Kostme 1 Depok</p>
-                            <p>800.000</p>
-                            <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
-                            <hr />
-                            <p>Pak Ikhmar</p>
-                        </div>
-                    </div>
-                    <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
-                        <div className="p-5">
-                            <p>Kostme 1 Depok</p>
-                            <p>800.000</p>
-                            <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
-                            <hr />
-                            <p>Pak Ikhmar</p>
-                        </div>
-                    </div>
-                    <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
-                        <div className="p-5">
-                            <p>Kostme 1 Depok</p>
-                            <p>800.000</p>
-                            <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
-                            <hr />
-                            <p>Pak Ikhmar</p>
-                        </div>
-                    </div>
-                    <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
-                        <div className="p-5">
-                            <p>Kostme 1 Depok</p>
-                            <p>800.000</p>
-                            <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
-                            <hr />
-                            <p>Pak Ikhmar</p>
-                        </div>
-                    </div>
-                    <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
-                        <div className="p-5">
-                            <p>Kostme 1 Depok</p>
-                            <p>800.000</p>
-                            <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
-                            <hr />
-                            <p>Pak Ikhmar</p>
-                        </div>
-                    </div>
-                    <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
-                        <div className="p-5">
-                            <p>Kostme 1 Depok</p>
-                            <p>800.000</p>
-                            <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
-                            <hr />
-                            <p>Pak Ikhmar</p>
-                        </div>
-                    </div>
+                <div className="grid grid-cols-3 gap-5">
+
+
+                    {
+                        posts.length > 0
+
+                        ?  posts.map((post, index) => (
+                            
+                            <div className="rounded-lg h-80 shadow-lg mb-10">
+                                <img className="rounded-lg object-fill h-48 w-full" src="images/kamar.jpg" />
+                                <div className="p-5">
+                                    <p>{post.kamar}</p>
+                                    <p>{post.harga}</p>
+                                    <p>{post.alamat}</p>
+                                    <hr />
+                                    <p>{post.pemilik}</p>
+                                </div>
+                            </div>
+
+                        ))
+
+                        : <div>Data tidak tersedia </div>
+                    }
+
                 </div>
 
                 <a href="/semuakamar" className="text-white bg-cyan-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Lihat semua kamar</a>
