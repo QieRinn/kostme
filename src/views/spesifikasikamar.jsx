@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom"
 export default function SpesifikasiKamar() {
     return (
-        <div className="spesifikasikamar bg-cyan-700 pt-20 pb-24 flex justify-center">
+        <div className="spesifikasikamar bg-cyan-700 pt-20 pb-48 flex justify-center">
             <div className="w-96">
                 <div>
                     {/* <h1 className="text-white text-center text-3xl ">Daftar</h1>    */}
                 </div>
 
-                <div className="bg-slate-200 w-96 mt-5 rounded-md p-12">
+                <div className="bg-slate-200 w-96 mt-20 rounded-md p-12 ">
                     <form action="/">
 
                         <label for="text" className=" text-sm font-medium text-gray-900">Spedsifikasi Kamar</label>
@@ -39,7 +39,7 @@ export default function SpesifikasiKamar() {
                                 <input type="checkbox" name="ingatsaya" id="ingatsaya "  />
                                 <label for="ingatsaya" className="block text-sm font-medium leading-6 text-gray-900"> Ventilasi </label>
                                 <input type="checkbox" name="ingatsaya" id="ingatsaya "  />
-                                <label for="ingatsaya" className="block text-sm font-medium leading-6 text-gray-900"> Kamar Mandi Dalam   </label>
+                                <label for="ingatsaya" className="block text-sm font-medium leading-6 text-gray-900"> Kamar Mandi Dalam   </label>  
                             </div>
 
                             

@@ -34,7 +34,7 @@ export default function Home() {
     
     return (
         <div className="home">
-            <nav className=" flex justify-center h-[100px] ">
+            <nav className=" bg-slate-100 flex justify-center h-[100px] ">
                 <div className="w-[1240px] flex items-center justify-between">
                 <div className="flex items-center w-[577px] justify-between">
                     <img src="images/logo.png" alt="" width="186" height="42" />
@@ -44,9 +44,15 @@ export default function Home() {
                         Beranda
                         </Link>
                     </p>
+
                     <p>Mitra</p>
-                    <p>Berita</p>
                     <p>Kontak</p>
+                    <p>
+                        <Link to="/kontak" className="">
+                        Berita
+                        </Link>
+                    </p>
+                    
                     </div>
                 </div>
                 <div className="w-[279px] flex justify-between">

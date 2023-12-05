@@ -25,7 +25,7 @@ export default function LoginMitra() {
                             <label for="ingatsaya"> Ingatkan Saya</label><br></br>
                         </div>
                         <div className="text-center w-full">
-                            <input type="submit" value="Masuk" className="bg-cyan-700 py-1 px-5 rounded-md text-white" />
+                            <input type="submit" value="Masuk" formaction="/admin/homeadmin" className="bg-cyan-700 py-1 px-5 rounded-md text-white" />
                         </div>
 
                         <br></br>

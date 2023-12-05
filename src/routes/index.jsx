@@ -20,6 +20,8 @@ import TipeKos from '../views/tipekos.jsx';
 import SpesifikasiKos from '../views/spesifikasikos.jsx';
 import SpesifikasiKamar from '../views/spesifikasikamar.jsx';
 import SpesifikasiMandi from '../views/spesifikasimandi.jsx';
+import SemuaKamar from '../views/semuakamar.jsx';
+import Kontak from '../views/kontak.jsx';
 
 function RoutesIndex() {
     return (
@@ -43,6 +45,8 @@ function RoutesIndex() {
             <Route path="/spesifikasikos" element={<SpesifikasiKos/>} />
             <Route path="/spesifikasikamar" element={<SpesifikasiKamar/>} />
             <Route path="/spesifikasimandi" element={<SpesifikasiMandi/>} />
+            <Route path="/semuakamar" element={<SemuaKamar/>} />
+            <Route path="/kontak" element={<Kontak/>} />
 
 
         </Routes>
