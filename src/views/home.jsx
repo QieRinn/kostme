@@ -19,11 +19,70 @@ export default function Home() {
     });
   };
 
+<<<<<<< HEAD
   //run hook useEffect
   useEffect(() => {
     //call method "fetchDataPosts"
     fetchDataPosts();
   }, []);
+=======
+        //fetch data from API with Axios
+        await api.get('/kamarterbaru')
+            .then(response => {
+                
+                //assign response data to state "posts"
+                setPosts(response.data.data);
+            })
+        
+    }
+
+    //run hook useEffect
+    useEffect(() => {
+        
+        //call method "fetchDataPosts"
+        fetchDataPosts();
+
+    }, []);
+
+    
+    return (
+        <div className="home">
+            <nav className=" bg-slate-100 flex justify-center h-[100px] ">
+                <div className="w-[1240px] flex items-center justify-between">
+                <div className="flex items-center w-[577px] justify-between">
+                    <img src="images/logo.png" alt="" width="186" height="42" />
+                    <div className="flex w-[340px] justify-between">
+                    <p>
+                        <Link to="/" className="">
+                        Beranda
+                        </Link>
+                    </p>
+
+                    <p>Mitra</p>
+                    <p>Kontak</p>
+                    <p>
+                        <Link to="/kontak" className="">
+                        Berita
+                        </Link>
+                    </p>
+                    
+                    </div>
+                </div>
+                <div className="w-[279px] flex justify-between">
+                    <button className="bg-purple-600 px-[36px] py-[10px] rounded-[47px]">
+                    <p className="text-white">
+                        <Link to="/login" className="">Masuk</Link>
+                    </p>
+                    </button>
+                </div>
+                </div>
+            </nav>
+            
+            <div className="bgimg pt-36">
+ 
+                <h1 className="font-bold text-black text-left text-xl ml-20 mb-10">Bingung cara cari kos impian</h1>
+                <h1 className="font-bold text-black text-left text-3xl ml-20 drop-shadow-lg"> CARI KAMAR KOS IDAMANMU DI PLATFORM KAMI </h1>
+>>>>>>> ca42bc653702a9a3a8db088878c437d3594f525c
 
   return (
     <div className="home">
