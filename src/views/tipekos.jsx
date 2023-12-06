@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 export default function DaftarKos() {
   return (
-    <div className="daftarkos bg-cyan-700 pt-20 pb-24 flex justify-center">
+    <div className="daftarkos bg-cyan-700 pt-20 pb-24 flex justify-center min-h-screen">
       <div className="w-96">
         <div>
           {/* <h1 className="text-white text-center text-3xl ">Daftar</h1>    */}
