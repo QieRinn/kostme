@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-export default function DaftarMitra() {
+export default function DaftarPenyewaKost() {
   return (
     <div className="daftarmitra bg-cyan-700 pt-20 pb-24 flex justify-center">
       <div className="w-96">
         <div>
-          <h1 className="text-white text-center text-3xl ">Daftar</h1>
+          <h1 className="text-white text-center text-3xl ">Daftar Penyewa Kost</h1>
         </div>
 
         <div className="bg-slate-200 w-96 mt-5 rounded-md p-12 ">
@@ -113,7 +113,7 @@ export default function DaftarMitra() {
               <p className=" text-xs text-center ">
                 Sudah punya akun KostMe?
                 <Link
-                  to="/loginmitra"
+                  to="/loginpencarikost"
                   className="no-underline hover:underline text-cyan-600"
                 >
                   Masuk Disini

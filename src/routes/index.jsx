@@ -14,7 +14,9 @@ import Cari from "../views/cari.jsx";
 
 import Login from '../views/login.jsx';
 import LoginMitra from '../views/loginmitra.jsx';
+import LoginPencariKost from '../views/loginpencarikost.jsx';
 import DaftarMitra from '../views/daftarmitra.jsx';
+import DaftarPenyewaKost from '../views/daftarpenyewakost.jsx';
 import DaftarKos from '../views/daftarkos.jsx';
 import TipeKos from '../views/tipekos.jsx';
 import SpesifikasiKos from '../views/spesifikasikos.jsx';
@@ -36,12 +38,15 @@ function RoutesIndex() {
 
             <Route path="/login" element={<Login />} />
             <Route path="/loginmitra" element={<LoginMitra />} />
+            <Route path="/loginpencarikost" element={<LoginPencariKost/>} />
             <Route path="/daftarmitra" element={<DaftarMitra />} />
+            <Route path="/daftarpenyewakost" element={<DaftarPenyewaKost/>} />
             <Route path="/daftarkos" element={<DaftarKos/>} />
             <Route path="/tipekos" element={<TipeKos/>} />
             <Route path="/spesifikasikos" element={<SpesifikasiKos/>} />
             <Route path="/spesifikasikamar" element={<SpesifikasiKamar/>} />
             <Route path="/spesifikasimandi" element={<SpesifikasiMandi/>} />
+
 
 
         </Routes>
