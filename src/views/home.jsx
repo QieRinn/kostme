@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <div className="home">
-      <nav className=" flex justify-center h-[100px] ">
+    <nav className="fixed top-0 left-0 right-0 flex justify-center h-[100px] bg-white z-50">
         <div className="w-[1240px] flex items-center justify-between">
           <div className="flex items-center w-[577px] justify-between">
             <img src="images/logo.png" alt="" width="186" height="42" />
@@ -43,7 +43,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-[279px] flex justify-between">
-            <button className="bg-purple-600 px-[36px] py-[10px] rounded-[47px]">
+          <button className="bg-purple-600 px-[36px] py-[10px] rounded-[47px] hover:bg-purple-700">
               <p className="text-white">
                 <Link to="/login" className="">
                   Masuk
