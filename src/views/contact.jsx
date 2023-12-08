@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-export default function Kontak() {
+export default function Contact() {
     return (
         <div className="kontak bg-cyan-700  ">
             <nav className=" bg-slate-100 flex justify-center h-[100px] ">

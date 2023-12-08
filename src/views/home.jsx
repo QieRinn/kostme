@@ -43,7 +43,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-[279px] flex justify-between">
-          <button className="bg-purple-600 px-[36px] py-[10px] rounded-[47px] hover:bg-purple-700">
+            <button className="bg-purple-600 px-[36px] py-[10px] rounded-[47px]">
               <p className="text-white">
                 <Link to="/login" className="">
                   Masuk
