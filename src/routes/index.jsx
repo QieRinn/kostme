@@ -12,6 +12,9 @@ import LaundryPartner from '../views/admin/laundrypartner.jsx';
 import KantinPartner from '../views/admin/kantinpartner.jsx';
 import DaftarKantin from '../views/admin/daftarkantin.jsx';
 import DaftarLaundry from '../views/admin/daftarlaundry.jsx';
+import TambahPenghuniKos from '../views/admin/tambahpenghunikos.jsx';
+
+
 
 
 //import view posts index
@@ -30,8 +33,7 @@ import SpesifikasiMandi from '../views/spesifikasimandi.jsx';
 import Contact from '../views/contact.jsx';
 import Peraturan from '../views/peraturan.jsx';
 import SemuaKamar from '../views/semuakamar.jsx';
-
-
+import PeraturanLanjut from '../views/peraturanlanjut.jsx';
 
 function RoutesIndex() {
   return (
@@ -44,8 +46,11 @@ function RoutesIndex() {
       <Route path="/admin/kospartner" element={<KosPartner />} />
       <Route path="/admin/kantinpartner" element={<KantinPartner />} />
       <Route path="/admin/laundrypartner" element={<LaundryPartner />} />
-      <Route path="/admin/daftarlaundry" element={<DaftarLaundry />} />
       <Route path="/admin/daftarkantin" element={<DaftarKantin />} />
+      <Route path="/admin/daftarlaundry" element={<DaftarLaundry />} />
+      <Route path="/admin/tambahpenghunikos" element={<TambahPenghuniKos />} />
+
+
 
       {/* route "/posts" */}
       <Route path="/cari" element={<Cari />} />
@@ -63,6 +68,9 @@ function RoutesIndex() {
             <Route path="/contact" element={<Contact/>} />
             <Route path="/peraturan" element={<Peraturan/>} />
             <Route path="/semuakamar" element={<SemuaKamar/>} />
+            <Route path="/peraturanlanjut" element={<PeraturanLanjut/>} />
+
+
 
 
 

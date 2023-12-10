@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-export default function DaftarKantin() {
+export default function TambahPenghuniKos() {
   return (
-    <div className="daftarlaundry bg-cyan-700 pt-20 pb-24 flex justify-center min-h-screen">
+    <div className="tambahpenghunikos bg-cyan-700 pt-20 pb-24 flex justify-center min-h-screen">
       <div className="w-96">
         <div>
           {/* <h1 className="text-white text-center text-3xl ">Daftar</h1>    */}
         </div>
         
                       <div> <label htmlFor="text" className="text-xl p-2 font-serif text-gray-900  flex justify-center">
-                      Daftar Kantin
+                      Tambah Penghuni Kos
                     </label>
 
         </div>
@@ -18,7 +18,7 @@ export default function DaftarKantin() {
               for="email"
               className="block text-sm font-medium leading-6 text-gray-900"
             >
-              Nama Kantin
+              Tanggal Mulai
             </label>
             <div className="relative mt-2 rounded-md shadow-sm">
               <input
@@ -27,23 +27,7 @@ export default function DaftarKantin() {
                 name="nama"
                 id="nama"
                 className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                placeholder="Masukkan Nama Kantin"
-              />
-            </div>
-
-            <label
-              for="email"
-              className="block text-sm font-medium leading-6 text-gray-900 mt-3"
-            >
-              Foto Kantin
-            </label>
-            <div className="relative mt-2 rounded-md shadow-sm">
-            
-              <input
-                type="file"
-                name="tambahkan foto"
-                id="tambahkan foto"
-                className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                placeholder=""
               />
             </div>
 
@@ -51,7 +35,7 @@ export default function DaftarKantin() {
               for="email"
               className="block text-sm font-medium leading-6 text-gray-900 mt-2"
             >
-              Alamat
+              Tanggal Berakhir
             </label>
             <div className="relative mt-2 rounded-md shadow-sm">
               <input
@@ -59,7 +43,7 @@ export default function DaftarKantin() {
                 name="nama"
                 id="nama"
                 className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                placeholder="Tambahkan Alamat Laundry"
+                placeholder=""
               />
             </div>
 
@@ -67,7 +51,23 @@ export default function DaftarKantin() {
             for="email"
             className="block text-sm font-medium leading-6 text-gray-900 mt-2"
           >
-            Deskripsi
+            Nama Penghuni Baru
+          </label>
+          <div className="relative mt-2 rounded-md shadow-sm">
+            <input
+              type="text"
+              name="nama"
+              id="nama"
+              className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              placeholder=""
+            />
+          </div>
+
+          <label
+            for="email"
+            className="block text-sm font-medium leading-6 text-gray-900 mt-2"
+          >
+            Status Dengan Penghuni Baru
           </label>
           <div className="relative mt-2 rounded-md shadow-sm">
             <input
