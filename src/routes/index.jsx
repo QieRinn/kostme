@@ -7,7 +7,12 @@ import Home from "../views/home.jsx";
 import HomeAdmin from "../views/admin/homeadmin.jsx";
 import DashboardPartner from "../views/admin/dashboardpartner.jsx";
 import HomeUser from "../views/homeuser.jsx";
-import KosPartner from "../views/admin/kosPartner.jsx";
+import KosPartner from '../views/admin/kospartner.jsx';
+import LaundryPartner from '../views/admin/laundrypartner.jsx';
+import KantinPartner from '../views/admin/kantinpartner.jsx';
+import DaftarKantin from '../views/admin/daftarkantin.jsx';
+import DaftarLaundry from '../views/admin/daftarlaundry.jsx';
+
 
 //import view posts index
 import Cari from "../views/cari.jsx";
@@ -36,7 +41,11 @@ function RoutesIndex() {
       <Route path="/admin/homeadmin" element={<HomeAdmin />} />
       <Route path="/admin/dashboardpartner" element={<DashboardPartner />} />
       <Route path="/homeuser" element={<HomeUser />} />
-      <Route path="/admin/kosPartner" element={<KosPartner />} />
+      <Route path="/admin/kospartner" element={<KosPartner />} />
+      <Route path="/admin/kantinpartner" element={<KantinPartner />} />
+      <Route path="/admin/laundrypartner" element={<LaundryPartner />} />
+      <Route path="/admin/daftarlaundry" element={<DaftarLaundry />} />
+      <Route path="/admin/daftarkantin" element={<DaftarKantin />} />
 
       {/* route "/posts" */}
       <Route path="/cari" element={<Cari />} />

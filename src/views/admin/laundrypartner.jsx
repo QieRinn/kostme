@@ -1,8 +1,8 @@
 import plus from "../../assets/clay-plus-sign-mathematics-blue-cute-graphic-kids.jpg";
 import { Link } from "react-router-dom"
-export default function KosPartner() {
+export default function LaundryPartner() {
   return (
-    <div className="kospartner">
+    <div className="laundrypartner">
       <button
         data-drawer-target="default-sidebar"
         data-drawer-toggle="default-sidebar"
@@ -128,7 +128,7 @@ export default function KosPartner() {
         <div className="flex justify-start m-3">
 
         <div>
-            <Link to="/daftarkos"
+            <Link to="/admin/daftarlaundry"
             className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             </Link>
           </div>

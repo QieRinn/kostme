@@ -39,7 +39,9 @@ export default function Home() {
               </p>
               <p>Mitra</p>
               <p>Berita</p>
-              <p>Kontak</p>
+              <Link to="/contact" className="">
+                  Kontak
+                </Link>
             </div>
           </div>
           <div className="w-[279px] flex justify-between">
@@ -78,7 +80,99 @@ export default function Home() {
           <h1 className="font-bold text-3xl mb-5 ml-8">Kamar Terbaru</h1>
         </div>
 
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-3 gap-4">
+          <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
+            <img
+              className="rounded-lg object-fill h-48 w-96"
+              src="../images/kamar.jpg"
+            />
+            <div className="p-5">
+              <p>Kostme 1 Depok</p>
+              <p>800.000</p>
+              <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
+              <hr />
+              <p>Pak Ikhmar</p>
+            </div>
+          </div>
+          <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
+            <img
+              className="rounded-lg object-fill h-48 w-96"
+              src="../images/kamar.jpg"
+            />
+            <div className="p-5">
+              <p>Kostme 1 Depok</p>
+              <p>800.000</p>
+              <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
+              <hr />
+              <p>Pak Ikhmar</p>
+            </div>
+          </div>
+          <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
+            <img
+              className="rounded-lg object-fill h-48 w-96"
+              src="../images/kamar.jpg"
+            />
+            <div className="p-5">
+              <p>Kostme 1 Depok</p>
+              <p>800.000</p>
+              <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
+              <hr />
+              <p>Pak Ikhmar</p>
+            </div>
+          </div>
+          <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
+            <img
+              className="rounded-lg object-fill h-48 w-96"
+              src="../images/kamar.jpg"
+            />
+            <div className="p-5">
+              <p>Kostme 1 Depok</p>
+              <p>800.000</p>
+              <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
+              <hr />
+              <p>Pak Ikhmar</p>
+            </div>
+          </div>
+          <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
+            <img
+              className="rounded-lg object-fill h-48 w-96"
+              src="../images/kamar.jpg"
+            />
+            <div className="p-5">
+              <p>Kostme 1 Depok</p>
+              <p>800.000</p>
+              <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
+              <hr />
+              <p>Pak Ikhmar</p>
+            </div>
+          </div>
+          <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
+            <img
+              className="rounded-lg object-fill h-48 w-96"
+              src="../images/kamar.jpg"
+            />
+            <div className="p-5">
+              <p>Kostme 1 Depok</p>
+              <p>800.000</p>
+              <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
+              <hr />
+              <p>Pak Ikhmar</p>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="/semuakamar"
+          className="text-white bg-cyan-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ml-8"
+        >
+          Lihat semua kamar
+        </a>
+        <br />
+        <br />
+        <br />
+      </div>
+
+        {/* <div className="grid grid-cols-3 gap-5">
           {posts.length > 0 ? (
             posts.map((post, index) => (
               <div className="rounded-lg h-80 shadow-lg mb-10">
@@ -109,7 +203,7 @@ export default function Home() {
         <br />
         <br />
         <br />
-      </div>
+      </div> */}
 
       <div className="py-10 pl-10">
         <div className="grid grid-cols-2 gap-4">

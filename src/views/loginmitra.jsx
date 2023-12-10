@@ -48,6 +48,7 @@ export default function LoginMitra() {
             </div>
             <div className="text-center w-full">
               <input
+                formAction="/admin/homeadmin"
                 type="submit"
                 value="Masuk"
                 className="bg-cyan-700 py-1 px-5 rounded-md text-white mt-4"
@@ -63,7 +64,7 @@ export default function LoginMitra() {
                   className="no-underline hover:underline text-cyan-600"
                 >
                   Daftar Sekarang
-                </Link>{" "}
+                </Link>
               </p>
             </div>
           </form>

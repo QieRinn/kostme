@@ -1,4 +1,4 @@
-export default function HomeAmin() {
+export default function HomeAdmin() {
   return (
     <div className="homeadmin">
       <div className="bgimg pt-36">
@@ -42,7 +42,7 @@ export default function HomeAmin() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar.jpg"
+              src="../images/kamar.jpg"
             />
             <div className="p-5">
               <p>Kostme 1 Depok</p>
@@ -55,7 +55,7 @@ export default function HomeAmin() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar.jpg"
+              src="../images/kamar.jpg"
             />
             <div className="p-5">
               <p>Kostme 1 Depok</p>
@@ -68,7 +68,7 @@ export default function HomeAmin() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar.jpg"
+              src="../images/kamar.jpg"
             />
             <div className="p-5">
               <p>Kostme 1 Depok</p>
@@ -81,7 +81,7 @@ export default function HomeAmin() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar.jpg"
+              src="../images/kamar.jpg"
             />
             <div className="p-5">
               <p>Kostme 1 Depok</p>
@@ -94,7 +94,7 @@ export default function HomeAmin() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar.jpg"
+              src="../images/kamar.jpg"
             />
             <div className="p-5">
               <p>Kostme 1 Depok</p>
@@ -201,7 +201,7 @@ export default function HomeAmin() {
         <div className="rounded-lg shadow-lg mb-10 ml-3">
           <img
             className="rounded-lg object-fill h-48 w-full"
-            src="images/kamar.jpg"
+            src="../images/kamar.jpg"
           />
           <div className="p-5">
             <p>Pak Ikhmar</p>
@@ -218,7 +218,7 @@ export default function HomeAmin() {
         <div className="rounded-lg shadow-lg mb-10">
           <img
             className="rounded-lg object-fill h-48 w-full"
-            src="images/kamar.jpg"
+            src="../images/kamar.jpg"
           />
           <div className="p-5">
             <p>Pak Ikhmar</p>
@@ -234,7 +234,7 @@ export default function HomeAmin() {
         <div className="rounded-lg shadow-lg mb-10">
           <img
             className="rounded-lg object-fill h-48 w-full"
-            src="images/kamar.jpg"
+            src="../images/kamar.jpg"
           />
           <div className="p-5">
             <p>Pak Ikhmar</p>
