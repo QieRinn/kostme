@@ -18,6 +18,7 @@ import TambahPenghuniKos from '../views/admin/tambahpenghunikos.jsx';
 
 
 
+
 //import view posts index
 import Cari from "../views/cari.jsx";
 
@@ -51,6 +52,7 @@ function RoutesIndex() {
       <Route path="/admin/daftarkantin" element={<DaftarKantin />} />
       <Route path="/admin/daftarlaundry" element={<DaftarLaundry />} />
       <Route path="/admin/tambahpenghunikos" element={<TambahPenghuniKos />} />
+
 
 
 

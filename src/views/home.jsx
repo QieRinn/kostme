@@ -57,12 +57,12 @@ export default function Home() {
       </nav>
 
       <div className="bgimg pt-36">
-        <h1 className="font-bold text-white text-left text-xl ml-20 mb-10">
-          Bingung cara cari kos impian
+        <h1 className="font-bold text-black text-left text-xl ml-20 mb-10 mr-10">
+          {/*BINGUNG CARI KAMAR KOS*/}
         </h1>
         <h1 className="font-bold text-white text-left text-3xl ml-20 drop-shadow-lg">
           {" "}
-          CARI KAMAR KOS IDAMANMU DI PLATFORM KAMI{" "}
+          {/*CARI KAMAR KOS IDAMANMU DI PLATFORM KAMI{" "} */}
         </h1>
       </div>
 
@@ -357,7 +357,7 @@ export default function Home() {
           </div>
           <div className="text-center text-white">
             <span className="text-3xl">35</span> <br />
-            <span>Pengguna bar setiap bulan</span>
+            <span>Pengguna baru setiap bulan</span>
           </div>
           <div className="text-center text-white">
             <span className="text-3xl">25</span> <br />
