@@ -1,11 +1,42 @@
+import { Link } from "react-router-dom";
 export default function HomeAdmin() {
   return (
     <div className="homeadmin">
+
+<nav className="fixed top-0 left-0 right-0 flex justify-center h-[100px] bg-white z-50">
+        <div className="w-[1240px] flex items-center justify-between">
+          <div className="flex items-center w-[577px] justify-between">
+            <img src="../images/logo.png" alt="" width="186" height="42" />
+            <div className="flex w-[340px] justify-between">
+              <p>
+                <Link to="/" className="">
+                  Beranda
+                </Link>
+              </p>
+              <p>Mitra</p>
+              <p>Berita</p>
+              <Link to="/contact" className="">
+                  Kontak
+                </Link>
+            </div>
+          </div>
+          <div className="w-[279px] flex justify-between">
+            <button className="bg-purple-600 px-[36px] py-[10px] rounded-[47px]">
+              <p className="text-white">
+                <Link to="/login" className="">
+                  Masuk
+                </Link>
+              </p>
+            </button>
+          </div>
+        </div>
+      </nav>
+
       <div className="bgimg pt-36">
-        <h1 className="font-bold text-black text-left text-xl mt-5 ml-8">
+        <h1 className="font-bold text-white text-left text-xl mt-5 ml-8">
           bingung cara cari kos impian
         </h1>
-        <h1 className="font-bold text-black text-left text-3xl mt-5 ml-8 drop-shadow-lg">
+        <h1 className="font-bold text-white text-left text-3xl mt-5 ml-8 drop-shadow-lg">
           {" "}
           CARI KAMAR KOS IDAMANMU DI PLATFORM KAMI{" "}
         </h1>

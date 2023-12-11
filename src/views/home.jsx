@@ -57,10 +57,10 @@ export default function Home() {
       </nav>
 
       <div className="bgimg pt-36">
-        <h1 className="font-bold text-black text-left text-xl ml-20 mb-10">
+        <h1 className="font-bold text-white text-left text-xl ml-20 mb-10">
           Bingung cara cari kos impian
         </h1>
-        <h1 className="font-bold text-black text-left text-3xl ml-20 drop-shadow-lg">
+        <h1 className="font-bold text-white text-left text-3xl ml-20 drop-shadow-lg">
           {" "}
           CARI KAMAR KOS IDAMANMU DI PLATFORM KAMI{" "}
         </h1>
@@ -75,7 +75,7 @@ export default function Home() {
             </div> */}
 
       <div className="bg-slate-100">
-        <div>
+        {/* <div>
           <h1 className="text-xl mt-5 ml-8">Kos Standar</h1>
           <h1 className="font-bold text-3xl mb-5 ml-8">Kamar Terbaru</h1>
         </div>
@@ -170,9 +170,9 @@ export default function Home() {
         <br />
         <br />
         <br />
-      </div>
+      </div> */}
 
-        {/* <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-3 gap-5">
           {posts.length > 0 ? (
             posts.map((post, index) => (
               <div className="rounded-lg h-80 shadow-lg mb-10">
@@ -203,7 +203,7 @@ export default function Home() {
         <br />
         <br />
         <br />
-      </div> */}
+      </div>
 
       <div className="py-10 pl-10">
         <div className="grid grid-cols-2 gap-4">

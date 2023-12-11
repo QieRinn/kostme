@@ -33,45 +33,52 @@ export default function Contact() {
                 </div>
             </nav>
             
-            <div>
-                    <h1 className="font-bold text-white text-center mt-6 text-3xl ">Kontak Form</h1>   
-            </div>
+            
 
-            <div className="w-96 pt-5 pb-24 m-auto ">
-                <div className="bg-slate-200 w-96 mt-5 rounded-md p-12 ">
-                    <form action="/">
+            <div className="grid grid-cols-2 gap-4">
+                <div className="">
+                    <img className="object-fill w-full" src="../images/man.png" />
+                </div>  
 
-                        <label for="email" className="block text-sm font-medium leading-6 text-gray-900">Email</label>
-                        <div className="relative mt-2 rounded-md shadow-sm">
-                            <input type="text" name="email" id="email" className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Masukkan Email" />
-                        </div>
+                <div className="w-full pt-3 pb-3">
+                    <div className=" w-full  rounded-md p-12 ">
+                        <h1 className="font-bold text-white mt-6 text-3xl ">Kontak Form</h1>   
+                        <br />
                         
-                        <label for="nama" className="block text-sm font-medium leading-6 text-gray-900">Nama</label>
-                        <div className="relative mt-2 rounded-md shadow-sm">
-                            <input type="text" name="nama" id="nama" className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Masukkan nama" />
-                        </div>
+                        <form action="/">
 
-                        <label for="nama" className="block text-sm font-medium leading-6 text-gray-900">Phone</label>
-                        <div className="relative mt-2 rounded-md shadow-sm">
-                            <input type="text" name="nama" id="nama" className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Masukkan Nomot Telepon" />
-                        </div>
+                            <label for="email" className="block text-sm font-medium leading-6 text-white">Email</label>
+                            <div className="relative mt-2 rounded-md shadow-sm">
+                                <input type="text" name="email" id="email" className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Masukkan Email" />
+                            </div>
+                            
+                            <label for="nama" className="block text-sm font-medium leading-6 text-white">Nama</label>
+                            <div className="relative mt-2 rounded-md shadow-sm">
+                                <input type="text" name="nama" id="nama" className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Masukkan nama" />
+                            </div>
 
-                        <label for="nama" className="block text-sm font-medium leading-6 text-gray-900">Pesan</label>
-                        <div className="relative mt-2 rounded-md shadow-sm">
-                            <textarea type="textarea" name="nama" id="nama" rows="5" className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Masukkan Pesan" />
-                        </div>
+                            <label for="nama" className="block text-sm font-medium leading-6 text-white">Phone</label>
+                            <div className="relative mt-2 rounded-md shadow-sm">
+                                <input type="text" name="nama" id="nama" className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Masukkan Nomot Telepon" />
+                            </div>
 
-                        <div className="text-center w-full mt-5">
-                            <input type="submit" value="send" className="bg-cyan-700 py-1 px-5 rounded-md text-white" />
-                        </div>
+                            <label for="nama" className="block text-sm font-medium leading-6 text-white">Pesan</label>
+                            <div className="relative mt-2 rounded-md shadow-sm">
+                                <textarea type="textarea" name="nama" id="nama" rows="5" className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Masukkan Pesan" />
+                            </div>
 
-                        <br></br>
+                            <div className="text-center w-full mt-5">
+                                <input type="submit" value="send" className="bg-slate-200 py-1 px-5 rounded-md" />
+                            </div>
 
-                        
+                            
 
-                    </form>
+                            
+
+                        </form>
 
 
+                    </div>
                 </div>
             </div>
 

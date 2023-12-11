@@ -17,6 +17,7 @@ import TambahPenghuniKos from '../views/admin/tambahpenghunikos.jsx';
 
 
 
+
 //import view posts index
 import Cari from "../views/cari.jsx";
 
@@ -34,6 +35,7 @@ import Contact from '../views/contact.jsx';
 import Peraturan from '../views/peraturan.jsx';
 import SemuaKamar from '../views/semuakamar.jsx';
 import PeraturanLanjut from '../views/peraturanlanjut.jsx';
+import DetailKamar from '../views/detailkamar.jsx';
 
 function RoutesIndex() {
   return (
@@ -69,6 +71,7 @@ function RoutesIndex() {
             <Route path="/peraturan" element={<Peraturan/>} />
             <Route path="/semuakamar" element={<SemuaKamar/>} />
             <Route path="/peraturanlanjut" element={<PeraturanLanjut/>} />
+            <Route path="/detailkamar" element={<DetailKamar/>} />
 
 
 

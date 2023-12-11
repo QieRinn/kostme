@@ -49,7 +49,7 @@ export default function KosPartner() {
                   <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
                 </svg>
                 <span>
-                  <Link to="/admin/laundrypartner" className="ms-3"> Laundry </Link>
+                  <Link to="/admin/dashboardpartner" className="ms-3"> Dasboard </Link>
                 </span>
                 
               </a>
@@ -127,14 +127,16 @@ export default function KosPartner() {
         <p>Lorem, ipsum dolor.</p>
         <div className="flex justify-start m-3">
 
-        <div>
-            <Link to="/daftarkos"
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            </Link>
-          </div>
+        
+            
           <div>
-            <img className="object-scale-down h-5 w-5" src={plus} alt="" />
+            <a href="/daftarkos" className="w-32 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+              <img className="object-scale-down h-5 w-5 m-auto" src={plus} alt="" />
+            </a>
           </div>
+          
+          
+          
           {/* <a
             href="#daftarkos"
             className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
