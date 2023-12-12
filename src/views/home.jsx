@@ -45,7 +45,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-[279px] flex justify-between">
-            <button className="bg-purple-600 px-[36px] py-[10px] rounded-[47px]">
+            <button className="bg-cyan-600 px-[36px] py-[10px] rounded-[47px]">
               <p className="text-white">
                 <Link to="/login" className="">
                   Masuk
@@ -196,9 +196,9 @@ export default function Home() {
 
         <a
           href="/semuakamar"
-          className="text-white bg-cyan-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ml-8"
-        >
-          Lihat semua kamar
+          className="text-white bg-cyan-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ml-8 mb-6"
+>
+        Lihat semua kamar
         </a>
         <br />
         <br />
@@ -263,7 +263,7 @@ export default function Home() {
 
             <ul className="list-disc ml-5">
               <li> Fitur potongan harga iklan untuk mitra baru</li>
-              <li> Fitur dasboard kelola kos </li>
+              <li> Fitur dashboard kelola kos </li>
               <li>Fitur pendaftan kos yang mudah</li>
             </ul>
           </div>
@@ -278,7 +278,7 @@ export default function Home() {
           <a
             href="/semuakamar"
             className="text-black bg-white hover:bg-cyan-500 font-medium rounded-lg text-sm px-5 py-2.5"
-          >
+          > 
             Lihat semua kamar
           </a>
         </div>

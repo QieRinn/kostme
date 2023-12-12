@@ -3,11 +3,11 @@ export default function Homeuser() {
     return (
         <div className="homeuser">
 
-            <nav className=" flex justify-center h-[100px] ">
-                    <div className="w-[1240px] flex items-center justify-between">
-                    <div className="flex items-center w-[577px] justify-between">
-                        <img src="images/logo.png" alt="" width="186" height="42" />
-                        <div className="flex w-[340px] justify-between">
+        <nav className="fixed top-0 left-0 right-0 flex justify-center h-[100px] bg-white z-50">
+        <div className="w-[1240px] flex items-center justify-between">
+          <div className="flex items-center w-[577px] justify-between">
+            <img src="images/logo.png" alt="" width="186" height="42" />
+            <div className="flex w-[340px] justify-between">
                         <p>
                             <Link to="/" className="">
                             Beranda
