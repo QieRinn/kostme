@@ -37,6 +37,9 @@ import Peraturan from '../views/peraturan.jsx';
 import SemuaKamar from '../views/semuakamar.jsx';
 import PeraturanLanjut from '../views/peraturanlanjut.jsx';
 import DetailKamar from '../views/detailkamar.jsx';
+//profile
+import Profile from '../views/profile.jsx';
+import EditProfile from '../views/editprofile.jsx';
 
 function RoutesIndex() {
   return (
@@ -74,6 +77,9 @@ function RoutesIndex() {
             <Route path="/semuakamar" element={<SemuaKamar/>} />
             <Route path="/peraturanlanjut" element={<PeraturanLanjut/>} />
             <Route path="/detailkamar" element={<DetailKamar/>} />
+            {/* profile */}
+            <Route path="/profile" element={<Profile/>} />
+            <Route path="/editprofile" element={<EditProfile/>} />
 
 
 
