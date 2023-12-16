@@ -13,7 +13,7 @@ export default function Home() {
   //define method
   const fetchDataPosts = async () => {
     //fetch data from API with Axios
-    await api.get("/kamarterbaru").then((response) => {
+    await api.get("/kamarall").then((response) => {
       //assign response data to state "posts"
       setPosts(response.data.data);
     });
@@ -182,7 +182,7 @@ export default function Home() {
                   src="images/kamar.jpg"
                 />
                 <div className="p-5 ">
-                  <p>{post.kamar}</p>
+                  <p>{post.namakamar}</p>
                   <p>{post.harga}</p>
                   <p>{post.alamat}</p>
                   <hr />

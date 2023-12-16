@@ -1,5 +1,26 @@
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 import { Link } from "react-router-dom";
+
+
 export default function HomeAdmin() {
+  const isAuthenticated = !!Cookies.get('auth');
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => { 
+    Cookies.remove('auth');
+    navigate('/loginmitra'); 
+  };
+
+  if (!isAuthenticated) {
+    navigate('/loginmitra'); 
+    return null; // Return null to prevent rendering anything else
+  }
+  else
+  {
+
+
   return (
     <div className="homeadmin">
 
@@ -18,6 +39,7 @@ export default function HomeAdmin() {
               <Link to="/contact" className="">
                   Kontak
                 </Link>
+                <button onClick={handleLogout}>Logout</button>
             </div>
           </div>
           
@@ -39,7 +61,7 @@ export default function HomeAdmin() {
           </div> */}
         </div>
       </nav>
-
+      
       <div className="bgimg pt-36">
         <h1 className="font-bold text-white text-left text-xl mt-5 ml-8">
           bingung cara cari kos impian
@@ -328,4 +350,6 @@ export default function HomeAdmin() {
       <div className="col-span-3"></div>
     </div>
   );
+  }
 }
+
