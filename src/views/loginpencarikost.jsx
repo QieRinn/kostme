@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 export default function LoginPencariKost() {
   return (
     <div className="loginpencarikost bg-cyan-700 pt-20 pb-24 flex justify-center min-h-screen">
+      
       <div className="w-96">
         <div>
           <h1 className="text-white text-center text-3xl ">Masuk</h1>
@@ -48,9 +49,11 @@ export default function LoginPencariKost() {
             </div>
             <div className="text-center w-full">
               <input
+              formaction ="/homeuser"
                 type="submit"
                 value="Masuk"
                 className="bg-cyan-700 py-1 px-5 rounded-md text-white mt-4"
+                
               />
             </div>
 

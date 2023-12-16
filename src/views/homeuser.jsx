@@ -1,11 +1,36 @@
+import { Link } from "react-router-dom";
 export default function Homeuser() {
   return (
     <div className="homeuser">
+      <nav className=" flex justify-center h-[100px] ">
+      <div className="w-[1240px] flex items-center justify-between">
+        <div className="flex items-center w-[577px] justify-between">
+          <img src="images/logo.png" alt="" width="186" height="42" />
+          <div className="flex w-[340px] justify-between">
+            <p>
+              <Link to="/homeuser" className="">
+                Beranda
+              </Link>
+            </p>
+            <p>Mitra</p>
+            <p>Berita</p>
+            <p>Kontak</p>
+          </div>
+        </div>
+        <div className=""> 
+          <Link to="/profile">
+            <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" 
+            src="../images/wan.jpg" alt="Bordered avatar"/>
+          </Link>
+          </div>
+      </div>
+    </nav>
+
       <div className="bgimg pt-36">
-        <h1 className="font-bold text-black text-left text-xl mt-5 ml-8">
+        <h1 className="font-bold text-white text-left text-xl mt-5 ml-8">
           bingung cara cari kos impian
         </h1>
-        <h1 className="font-bold text-black text-left text-3xl mt-5 ml-8 drop-shadow-lg">
+        <h1 className="font-bold text-white text-left text-3xl mt-5 ml-8 drop-shadow-lg">
           {" "}
           CARI KAMAR KOS IDAMANMU DI PLATFORM KAMI{" "}
         </h1>

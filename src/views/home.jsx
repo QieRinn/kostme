@@ -57,12 +57,12 @@ export default function Home() {
       </nav>
 
       <div className="bgimg pt-36">
-        <h1 className="font-bold text-black text-left text-xl ml-20 mb-10 mr-10">
-          {/*BINGUNG CARI KAMAR KOS*/}
+        <h1 className="font-bold text-white text-left text-xl mt-5 ml-8">
+          bingung cara cari kos impian
         </h1>
-        <h1 className="font-bold text-white text-left text-3xl ml-20 drop-shadow-lg">
+        <h1 className="font-bold text-white text-left text-3xl mt-5 ml-8 drop-shadow-lg">
           {" "}
-          {/*CARI KAMAR KOS IDAMANMU DI PLATFORM KAMI{" "} */}
+          CARI KAMAR KOS IDAMANMU DI PLATFORM KAMI{" "}
         </h1>
       </div>
 
@@ -75,12 +75,13 @@ export default function Home() {
             </div> */}
 
       <div className="bg-slate-100">
-        {/* <div>
+         <div>
           <h1 className="text-xl mt-5 ml-8">Kos Standar</h1>
           <h1 className="font-bold text-3xl mb-5 ml-8">Kamar Terbaru</h1>
         </div>
+        
 
-        <div className="grid grid-cols-3 gap-4">
+       {/* <div className="grid grid-cols-3 gap-4">
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
             <img
               className="rounded-lg object-fill h-48 w-96"
