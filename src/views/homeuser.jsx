@@ -1,20 +1,32 @@
 import { Link } from "react-router-dom";
 export default function Homeuser() {
   return (
-    <div className="homeuser">
-      <nav className=" flex justify-center h-[100px] ">
-      <div className="w-[1240px] flex items-center justify-between">
+    <div className="home">
+    <nav className="fixed top-0 left-0 right-0 flex justify-center h-[100px] bg-white z-50">
+        <div className="w-[1240px] flex items-center justify-between">
         <div className="flex items-center w-[577px] justify-between">
           <img src="images/logo.png" alt="" width="186" height="42" />
           <div className="flex w-[340px] justify-between">
             <p>
-              <Link to="/homeuser" className="">
+                <Link to="/homeuser" className="">
                 Beranda
-              </Link>
+                </Link>
             </p>
-            <p>Mitra</p>
-            <p>Berita</p>
-            <p>Kontak</p>
+            <p>
+                <Link to="/daftarmitra" className="">
+                Mitra
+                </Link>
+            </p>
+            <p>
+                <Link to="/daftarmitra" className="">
+                Berita
+                </Link>
+            </p>
+            <p>
+                <Link to="/contact" className="">
+                Kontak
+                </Link>
+            </p>
           </div>
         </div>
         <div className=""> 
@@ -46,12 +58,12 @@ export default function Homeuser() {
 
       <div className="bg-slate-100">
         <div>
-          <h1 className="text-xl mt-5">Kos Standar</h1>
-          <h1 className="font-bold text-3xl mb-5">Kamar Terbaru</h1>
+          <h1 className="text-xl mt-5 ml-7">Kos Standar</h1>
+          <h1 className="font-bold text-3xl mb-5 ml-7">Kamar Terbaru</h1>
         </div>
 
         <div className="grid grid-cols-3 gap-4">
-          <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
+          <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
             <img
               className="rounded-lg object-fill h-48 w-96"
               src="images/kamar.jpg"
@@ -90,7 +102,7 @@ export default function Homeuser() {
               <p>Pak Ikhmar</p>
             </div>
           </div>
-          <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
+          <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
             <img
               className="rounded-lg object-fill h-48 w-96"
               src="images/kamar.jpg"
@@ -133,7 +145,7 @@ export default function Homeuser() {
 
         <a
           href="/semuakamar"
-          className="text-white bg-cyan-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          className="text-white bg-cyan-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ml-7"
         >
           Lihat semua kamar
         </a>
@@ -201,7 +213,7 @@ export default function Homeuser() {
             <ul className="list-disc ml-5">
               <li> Fitur potongan harga iklan untuk mitra baru</li>
               <li> Fitur dasboard kelola kos </li>
-              <li>Fitur pendaftan kos yang mudah</li>
+              <li>Fitur pendaftaran kos yang mudah</li>
             </ul>
           </div>
           <div>
@@ -225,12 +237,12 @@ export default function Homeuser() {
       <div className="text-center">
         <h1 className="text-xl mt-5 font-bold">Mitra kami</h1>
         <h1 className="text-lg mb-5">
-          beberpa pemilik kos yang sudeh bergabung dengan kami
+          beberapa pemilik kos yang sudah bergabung dengan kami
         </h1>
       </div>
 
       <div className="grid grid-cols-3 gap-8">
-        <div className="rounded-lg shadow-lg mb-10">
+        <div className="rounded-lg shadow-lg mb-10 ml-3">
           <img
             className="rounded-lg object-fill h-48 w-full"
             src="images/kamar.jpg"
@@ -239,9 +251,9 @@ export default function Homeuser() {
             <p>Pak Ikhmar</p>
             <p>Depok</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Amet et facilisis faucibus
-              elementum auctor accumsan vulputate. Nibh scelerisque vehicula
-              ornare.
+              {" "}
+              Selamat datang di Kosan Pak Ikhmar, Tempat di mana kenyamanan dan
+              keamanan menjadi prioritas utama.
             </p>
             <hr />
             <p>Pak Ikhmar</p>
@@ -253,14 +265,14 @@ export default function Homeuser() {
             src="images/kamar.jpg"
           />
           <div className="p-5">
-            <p>Pak Ikhmar</p>
+            <p>Pak Umar</p>
             <p>Depok</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Amet et facilisis faucibus
-              elementum auctor accumsa.{" "}
+              Nikmati keuntungan tinggal di kosan kami yang berlokasi strategis,
+              dekat dengan pusat kota dan akses mudah ke transportasi umum.{" "}
             </p>
             <hr />
-            <p>Pak Ikhmar</p>
+            <p>Pak Umar</p>
           </div>
         </div>
         <div className="rounded-lg shadow-lg mb-10">
@@ -269,14 +281,14 @@ export default function Homeuser() {
             src="images/kamar.jpg"
           />
           <div className="p-5">
-            <p>Pak Ikhmar</p>
+            <p>Pak Ronald</p>
             <p>Depok</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Amet et facilisis faucibus
-              elementum auctor accumsa.
+              Kosan kami selalu bersih dan terawat dengan baik. Fasilitas
+              lengkap untuk memenuhi kebutuhan harian Anda.
             </p>
             <hr />
-            <p>Pak Ikhmar</p>
+            <p>Pak Ronald</p>
           </div>
         </div>
       </div>
@@ -286,19 +298,19 @@ export default function Homeuser() {
         <div className="grid grid-cols-4 gap-8 pt-10 pb-10">
           <div className="text-center text-white">
             <span className="text-3xl">100</span> <br />
-            <span>lsjfd lsdjfls flskf jl jsfl</span>
+            <span>Total dari mitra kami</span>
           </div>
           <div className="text-center text-white">
-            <span className="text-3xl">1367</span> <br />
-            <span>lsjfd lsdjfls flskf jl jsfl</span>
+            <span className="text-3xl">100+</span> <br />
+            <span>Total dari pengguna platform kami</span>
           </div>
           <div className="text-center text-white">
-            <span className="text-3xl">20</span> <br />
-            <span>lsjfd lsdjfls flskf jl jsfl</span>
+            <span className="text-3xl">35</span> <br />
+            <span>Pengguna baru setiap bulan</span>
           </div>
           <div className="text-center text-white">
-            <span className="text-3xl">5</span> <br />
-            <span>lsjfd lsdjfls flskf jl jsfl</span>
+            <span className="text-3xl">25</span> <br />
+            <span>Kamar baru setiap minggu</span>
           </div>
         </div>
       </div>

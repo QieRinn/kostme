@@ -8,16 +8,26 @@ export default function Homeuser() {
           <div className="flex items-center w-[577px] justify-between">
             <img src="images/logo.png" alt="" width="186" height="42" />
             <div className="flex w-[340px] justify-between">
-                        <p>
-                            <Link to="/" className="">
-                            Beranda
-                            </Link>
-                        </p>
-                        <p>Mitra</p>
-                        <p>Berita</p>
-                        <Link to="/kontak" className="">
-                            Kontak
-                            </Link>
+            <p>
+            <Link to="/homeuser" className="">
+            Beranda
+            </Link>
+        </p>
+        <p>
+            <Link to="/daftarmitra" className="">
+            Mitra
+            </Link>
+        </p>
+        <p>
+            <Link to="/daftarmitra" className="">
+            Berita
+            </Link>
+        </p>
+        <p>
+            <Link to="/contact" className="">
+            Kontak
+            </Link>
+        </p>
                         </div>
                     </div>
                     <div className="w-[279px] flex justify-between">

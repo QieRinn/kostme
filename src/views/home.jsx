@@ -33,15 +33,23 @@ export default function Home() {
             <img src="images/logo.png" alt="" width="186" height="42" />
             <div className="flex w-[340px] justify-between">
               <p>
-                <Link to="/" className="">
+                  <Link to="/home" className="">
                   Beranda
-                </Link>
+                  </Link>
               </p>
-              <p>Mitra</p>
-              <p>Berita</p>
-              <Link to="/contact" className="">
+              <p>
+                  <Link to="/daftarmitra" className="">
+                  Mitra
+                  </Link>
+              </p>
+              <p>
+                  <Link to="/daftarmitra" className="">
+                  Berita
+                  </Link>
+              </p>
+                  <Link to="/contact" className="">
                   Kontak
-                </Link>
+                  </Link>
             </div>
           </div>
           <div className="w-[279px] flex justify-between">
@@ -268,7 +276,7 @@ export default function Home() {
             <ul className="list-disc ml-5">
               <li> Fitur potongan harga iklan untuk mitra baru</li>
               <li> Fitur dashboard kelola kos </li>
-              <li>Fitur pendaftan kos yang mudah</li>
+              <li>Fitur pendaftaran kos yang mudah</li>
             </ul>
           </div>
           <div>
@@ -292,7 +300,7 @@ export default function Home() {
       <div className="text-center">
         <h1 className="text-xl mt-5 font-bold">Mitra kami</h1>
         <h1 className="text-lg mb-5">
-          beberpa pemilik kos yang sudeh bergabung dengan kami
+          beberapa pemilik kos yang sudah bergabung dengan kami
         </h1>
       </div>
 

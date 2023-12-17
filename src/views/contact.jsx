@@ -8,17 +8,27 @@ export default function Contact() {
                 <div className="flex items-center w-[577px] justify-between">
                     <img src="images/logo.png" alt="" width="186" height="42" />
                     <div className="flex w-[340px] justify-between">
+                    
                     <p>
-                        <Link to="/" className="">
+                        <Link to="/homeuser" className="">
                         Beranda
                         </Link>
                     </p>
-                    <p>Mitra</p>
-                    <p>Berita</p>
-                    
+
                     <p>
-                        <Link to="/kontak" className="">
+                        <Link to="/daftarmitra" className="">
+                        Mitra
+                        </Link>
+                    </p>
+
+                    <p>
+                        <Link to="/homeuser" className="">
                         Berita
+                        </Link>
+                    </p>
+                    <p>
+                        <Link to="/contact" className="">
+                        Kontak
                         </Link>
                     </p>
                     
