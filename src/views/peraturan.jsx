@@ -83,13 +83,13 @@ export default function Peraturan() {
               <input
                 type="submit"
                 value="Kembali"
-                formAction="/spesifikasikamar"
+                formAction="/spesifikasimandi"
                 className="bg-cyan-700 py-1 px-5 rounded-md text-white flex justify-start"
               />
               <input
                 type="submit"
                 value="Lanjut "
-                formAction="/peraturan"
+                formAction="/detailkamar"
                 className="bg-cyan-700 py-1 px-5 rounded-md text-white flex justify-end"
               />
             </div>

@@ -307,8 +307,8 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-8">
         <div className="rounded-lg shadow-lg mb-10 ml-3">
           <img
-            className="rounded-lg object-fill h-48 w-full"
-            src="images/kamar.jpg"
+            className="rounded-lg object-fill h-50 w-full"
+            src="images/mitra 1.jpeg"
           />
           <div className="p-5">
             <p>Pak Ikhmar</p>
@@ -324,24 +324,24 @@ export default function Home() {
         </div>
         <div className="rounded-lg shadow-lg mb-10">
           <img
-            className="rounded-lg object-fill h-48 w-full"
-            src="images/kamar.jpg"
+            className="rounded-lg object-fill h-50 w-full"
+            src="images/mitra 2.jpeg"
           />
           <div className="p-5">
-            <p>Pak Umar</p>
+            <p>Bu Amelia</p>
             <p>Depok</p>
             <p>
               Nikmati keuntungan tinggal di kosan kami yang berlokasi strategis,
               dekat dengan pusat kota dan akses mudah ke transportasi umum.{" "}
             </p>
             <hr />
-            <p>Pak Umar</p>
+            <p>Bu Amelia</p>
           </div>
         </div>
         <div className="rounded-lg shadow-lg mb-10">
           <img
-            className="rounded-lg object-fill h-48 w-full"
-            src="images/kamar.jpg"
+            className="rounded-lg object-fill h-50 w-full"
+            src="images/mitra 3.jpeg"
           />
           <div className="p-5">
             <p>Pak Ronald</p>

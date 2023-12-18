@@ -54,7 +54,7 @@ export default function Homeuser() {
 
                 <div className="grid grid-cols-3 gap-4">
                     <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar 1.jpeg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -64,7 +64,7 @@ export default function Homeuser() {
                         </div>
                     </div>
                     <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar3.jpg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -74,7 +74,7 @@ export default function Homeuser() {
                         </div>
                     </div>
                     <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar4.jpg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -84,7 +84,7 @@ export default function Homeuser() {
                         </div>
                     </div>
                     <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar 5.jpeg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -94,7 +94,7 @@ export default function Homeuser() {
                         </div>
                     </div>
                     <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar 7.jpeg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -104,7 +104,7 @@ export default function Homeuser() {
                         </div>
                     </div>
                     <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar 6.jpeg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -127,7 +127,7 @@ export default function Homeuser() {
 
                 <div className="grid grid-cols-3 gap-4">
                     <div className=" bg-slate-100 rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar promo 1.jpeg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -137,7 +137,7 @@ export default function Homeuser() {
                         </div>
                     </div>
                     <div className="bg-slate-100 rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar promo 2.jpeg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -147,7 +147,7 @@ export default function Homeuser() {
                         </div>
                     </div>
                     <div className="bg-slate-100 rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar promo 3.jpeg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -157,7 +157,7 @@ export default function Homeuser() {
                         </div>
                     </div>
                     <div className="bg-slate-100 rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar promo 4.jpeg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -167,7 +167,7 @@ export default function Homeuser() {
                         </div>
                     </div>
                     <div className="bg-slate-100 rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar promo 5.jpeg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>
@@ -177,7 +177,7 @@ export default function Homeuser() {
                         </div>
                     </div>
                     <div className="bg-slate-100 rounded-lg h-80 w-96 shadow-lg mb-10">
-                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar.jpg" />
+                        <img className="rounded-lg object-fill h-48 w-96" src="images/kamar promo 6.jpeg" />
                         <div className="p-5">
                             <p>Kostme 1 Depok</p>
                             <p>800.000</p>

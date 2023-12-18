@@ -66,7 +66,7 @@ export default function Homeuser() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar.jpg"
+              src="images/kamar4.jpg"
             />
             <div className="p-5">
               <p>Kostme 1 Depok</p>
@@ -79,11 +79,11 @@ export default function Homeuser() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar.jpg"
+              src="images/gambar kost 2.JPG"
             />
             <div className="p-5">
-              <p>Kostme 1 Depok</p>
-              <p>800.000</p>
+              <p>Kostme 2 Depok</p>
+              <p>1.000.000</p>
               <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
               <hr />
               <p>Pak Ikhmar</p>
@@ -92,53 +92,53 @@ export default function Homeuser() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar.jpg"
+              src="images/gambar kost 3.JPG"
             />
             <div className="p-5">
-              <p>Kostme 1 Depok</p>
+              <p>Kos Pelangi</p>
               <p>800.000</p>
               <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
               <hr />
-              <p>Pak Ikhmar</p>
+              <p>Bu Amelia</p>
             </div>
           </div>
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar.jpg"
+              src="images/gambar kost 4.JPG"
             />
             <div className="p-5">
-              <p>Kostme 1 Depok</p>
-              <p>800.000</p>
+              <p>Kos Pelangi</p>
+              <p>850.000</p>
               <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
               <hr />
-              <p>Pak Ikhmar</p>
+              <p>Bu Amelia</p>
             </div>
           </div>
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar.jpg"
+              src="images/kamar3.jpg"
             />
             <div className="p-5">
-              <p>Kostme 1 Depok</p>
+              <p>Kos The Raid</p>
               <p>800.000</p>
               <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
               <hr />
-              <p>Pak Ikhmar</p>
+              <p>Pak Ronald</p>
             </div>
           </div>
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar.jpg"
+              src="images/kamar2.jpg"
             />
             <div className="p-5">
-              <p>Kostme 1 Depok</p>
-              <p>800.000</p>
+              <p>Kos The Raid</p>
+              <p>900.000</p>
               <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
               <hr />
-              <p>Pak Ikhmar</p>
+              <p>Pak Ronald</p>
             </div>
           </div>
         </div>
@@ -244,8 +244,8 @@ export default function Homeuser() {
       <div className="grid grid-cols-3 gap-8">
         <div className="rounded-lg shadow-lg mb-10 ml-3">
           <img
-            className="rounded-lg object-fill h-48 w-full"
-            src="images/kamar.jpg"
+            className="rounded-lg object-fill h-50 w-full"
+            src="images/mitra 1.jpeg"
           />
           <div className="p-5">
             <p>Pak Ikhmar</p>
@@ -261,24 +261,24 @@ export default function Homeuser() {
         </div>
         <div className="rounded-lg shadow-lg mb-10">
           <img
-            className="rounded-lg object-fill h-48 w-full"
-            src="images/kamar.jpg"
+            className="rounded-lg object-fill h-50 w-full"
+            src="images/mitra 2.jpeg"
           />
           <div className="p-5">
-            <p>Pak Umar</p>
+            <p>Bu Amelia</p>
             <p>Depok</p>
             <p>
               Nikmati keuntungan tinggal di kosan kami yang berlokasi strategis,
               dekat dengan pusat kota dan akses mudah ke transportasi umum.{" "}
             </p>
             <hr />
-            <p>Pak Umar</p>
+            <p>Bu Amelia</p>
           </div>
         </div>
         <div className="rounded-lg shadow-lg mb-10">
           <img
-            className="rounded-lg object-fill h-48 w-full"
-            src="images/kamar.jpg"
+            className="rounded-lg object-fill h-50 w-full"
+            src="images/mitra 3.jpeg"
           />
           <div className="p-5">
             <p>Pak Ronald</p>

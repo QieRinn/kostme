@@ -5,7 +5,11 @@ export default function Detailkamar() {
     <div className="detailkamar">
 
         <div className="bg-cyan-700 h-10 pt-1">
-            <h1 className="font-bold text-xl"> Home </h1>
+            <h1 className="font-bold text-xl">
+            <Link to="/homeuser" className="">
+            Beranda
+            </Link>
+        </h1>
         </div>
 
         <div className="grid grid-cols-2 mt-10 px-20">
@@ -111,7 +115,7 @@ export default function Detailkamar() {
 
     <div className="grid grid-cols-3 gap-4 ml-12 mt-5">
         <div>
-        <h1 className="font-bold text-2xl mb-3">Cek kembali sebelum selesai</h1>
+        <h1 className="font-bold text-2xl justify-center mb-3">Cek kembali sebelum selesai</h1>
         </div>
     </div>
 
@@ -120,14 +124,14 @@ export default function Detailkamar() {
               <input
                 type="submit"
                 value="Kembali"
-                formAction="/tipekos"
+                formAction="/peraturan"
                 className="bg-cyan-700 py-1 px-5 rounded-md text-white flex justify-start ml-5"
               />
               <input
                 type="submit"
-                value="Selesai"
-                formAction="spesifikasikamar"
-                className="bg-cyan-700 py-1 px-5 rounded-md text-white flex justify-end mr-5"
+                value="Lanjut "
+                formAction="/homeuser"
+                className="bg-cyan-700 py-1 px-5 rounded-md text-white flex justify-end mr-3"
               />
             </div>
             <br />
