@@ -3,7 +3,7 @@ export default function Profile() {
   return (
     <div className="profile bg-slate-200">
       <div class="container mx-auto my-5">
-        <div class="bg-white shadow-lg rounded-lg p-5">
+        <div class="bg-white shadow-lg rounded-lg p-5 mt-32">
           <div class="flex items-center justify-center space-x-5">
             <img src="images/wan.jpg" alt="avatar" class="w-20 h-20 rounded-full "/>
             <div>
@@ -16,8 +16,9 @@ export default function Profile() {
             <h2 class="text-xl font-bold mb-3">Info Profile</h2>
           </div>
 
-          <div className="">
-              <div className="bg=slate-200 rounded-lg h-32 w-48 shadow-lg mb-10 ml-3 flex ">
+          <div class="mt-10 flex justify-center">
+            <div className="">
+              <div className="bg=slate-200 rounded-lg h-32 w-48 shadow-lg mb-10 ml-3 flex mr-10">
                 <div className="mt-10 flex">
                   <img className="rounded-lg object-fill h-10 w-10 "
                     src="../images/phone.png"/>
@@ -38,6 +39,9 @@ export default function Profile() {
                   </div>
               </div>
             </div>
+          </div>
+
+
           </div>
 
           

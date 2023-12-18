@@ -1,20 +1,43 @@
 import { Link } from "react-router-dom";
 import Cookies from 'js-cookie';
-import { useState } from 'react';
+import { useState, useEffect  } from 'react';
 import { useNavigate } from 'react-router-dom';
+
+//import api
+import api from "../api";
+
 export default function LoginMitra() {
   const navigate = useNavigate();
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const testAuthData = {
-    username: 'luthfi@gmail.com',
-    password: 'test',
-  }; 
-  const authenticateUser = (username, password) => {
-    if (username === testAuthData.username && password === testAuthData.password) { 
+//ini state
+const [users, setUsers] = useState([]);
+//define method
+const fetchDataUsers = async () => {
+  //fetch data from API with Axios
+  await api.get("/adminbyemail/"+email).then((response) => {
+    //assign response data to state "posts"
+    setUsers(response.data.data);
+  });
+};  //run hook useEffect
+
+//useEffect(() => {
+  //call method "fetchDataPosts"
+  //fetchDataUsers();
+//}, []);
+
+  // const testAuthData = {
+  //   username: 'luthfi@gmail.com',
+  //   password: 'test',
+  // }; 
+  const authenticateUser = (email, password) => {
+    fetchDataUsers();
+  
+
+    if (email === users.email && password === users.password) { 
       const userData = {
-        username,
+        email,
         password,
       };
       const expirationTime = new Date(new Date().getTime() + 60000);
@@ -23,14 +46,15 @@ export default function LoginMitra() {
     }
     return false;
   };
+  
   const handleLogin = (e) => {
     e.preventDefault();
-    const isAuthenticated = authenticateUser(username, password);
+    const isAuthenticated = authenticateUser(email, password);
     if (isAuthenticated) {
       navigate('/admin/homeadmin');
     } else {
       // Show error message or perform other actions for failed authentication
-      alert('Username atau Password salah.');
+      alert('Email atau Password salah.');
     }
   };
 
@@ -55,8 +79,8 @@ export default function LoginMitra() {
                 id="email"
                 className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 placeholder="Masukkan Email"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
 
