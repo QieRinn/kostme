@@ -7,7 +7,7 @@ export default function DaftarLaundry() {
           {/* <h1 className="text-white text-center text-3xl ">Daftar</h1>    */}
         </div>
         
-                      <div> <label htmlFor="text" className="text-xl p-2 font-serif text-gray-900  flex justify-center">
+                      <div> <label htmlFor="text" className="text-xl text-white p-2 font-serif  flex justify-center">
                       Daftar laundry
                     </label>
 

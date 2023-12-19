@@ -121,8 +121,8 @@ export default function Homeuser() {
 
             <div className="bg-cyan-700 text-black pt-20 pb-10 pl-10 pr-10">
             <div>
-                    <h1 className="text-xl mt-5">Kos Standar</h1>
-                    <h1 className="font-bold text-3xl mb-5">Kamar Promosi</h1>
+                    <h1 className="text-xl text-white mt-5">Kos Standar</h1>
+                    <h1 className="font-bold text-white text-3xl mb-5">Kamar Promosi</h1>
                 </div>
 
                 <div className="grid grid-cols-3 gap-4">

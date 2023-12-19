@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function Peraturan() {
   return (
     <div className="peraturan bg-cyan-700 pt-20 pb-24 flex justify-center min-h-screen">
-      <div className="w-96">
-        <div className="bg-slate-200 w-96 mt-10 rounded-md p-12 ">
+      <div className="w-100">
+        <div className="bg-slate-200 w-100 mt-10 rounded-md p-12 ">
           <form action="/">
             <label htmlFor="text" className="text-xl font-serif text-gray-900 mb-7 flex justify-center ">
               Peraturan Kos
@@ -17,7 +17,7 @@ export default function Peraturan() {
                   Akses 24 Jam
                 </label>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center mr-12">
                 <input type="checkbox" name="cermin" id="cermin" />
                 <label htmlFor="cermin" className="text-sm font-medium text-gray-900 ml-2 mr-2">
                   Boleh Pasutri
@@ -32,7 +32,7 @@ export default function Peraturan() {
                   Boleh Bawa Bayi
                 </label>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center mr-12">
                 <input type="checkbox" name="wastafel" id="wastafel" />
                 <label htmlFor="wastafel" className="block text-sm font-medium leading-6 text-gray-900 ml-2">
                   Maks 1 Orang
@@ -47,7 +47,7 @@ export default function Peraturan() {
                   Dilarang Bawa Bayi
                 </label>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center mr-12">
                 <input type="checkbox" name="gantunganHanduk" id="gantunganHanduk" />
                 <label htmlFor="gantunganHanduk" className="block text-sm font-medium leading-6 text-gray-900 ml-2 mr-2">
                   Maks 2 Orang
@@ -55,14 +55,14 @@ export default function Peraturan() {
               </div>
             </div>
 
-            <div className="flex justify-between mt-2">
+            <div className="flex justify-between mt-2 mb-2">
               <div className="flex items-center">
                 <input type="checkbox" name="klosetJongkok" id="klosetJongkok" />
                 <label htmlFor="klosetJongkok" className="block text-sm font-medium leading-6 text-gray-900 ml-2">
                   Lawan Jenis Dilarang Masuk
                 </label>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center ml-12">
                 <input type="checkbox" name="shower" id="shower" />
                 <label htmlFor="shower" className="block text-sm font-medium leading-6 text-gray-900 ml-2">
                   Dilarang Ramai Diatas Jam 12
