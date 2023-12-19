@@ -69,9 +69,7 @@ export default function DashboardPartner() {
                 <span>
                   <Link to="/admin/kospartner" className="ms-3"> Kos </Link>
                 </span>
-                <span className="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
-                  Pro
-                </span>
+                
               </a>
             </li>
             <li>
@@ -93,8 +91,6 @@ export default function DashboardPartner() {
                   <Link to="/admin/laundrypartner" className="flex-1 ms-3 whitespace-nowrap"> Laundry </Link>
                 </span>
 
-                <span className="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">
-                </span>
               </a>
             </li>
             <li>

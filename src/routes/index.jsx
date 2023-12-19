@@ -4,9 +4,10 @@ import { Routes, Route } from "react-router-dom";
 //import view homepage
 
 import Home from "../views/home.jsx";
+//admin
 import HomeAdmin from "../views/admin/homeadmin.jsx";
 import DashboardPartner from "../views/admin/dashboardpartner.jsx";
-import HomeUser from "../views/homeuser.jsx";
+import HomeUser from "../views/user/homeuser.jsx";
 import KosPartner from '../views/admin/kospartner.jsx';
 import LaundryPartner from '../views/admin/laundrypartner.jsx';
 import KantinPartner from '../views/admin/kantinpartner.jsx';
@@ -23,8 +24,8 @@ import TambahPenghuniKos from '../views/admin/tambahpenghunikos.jsx';
 import Cari from "../views/cari.jsx";
 
 import Login from '../views/login.jsx';
-import LoginMitra from '../views/loginmitra.jsx';
-import LoginPencariKost from '../views/loginpencarikost.jsx';
+import LoginMitra from '../views/admin/loginmitra.jsx';
+import LoginPencariKost from '../views/user/loginpencarikost.jsx';
 import DaftarMitra from '../views/daftarmitra.jsx';
 import DaftarPenyewaKost from '../views/daftarpenyewakost.jsx';
 import DaftarKos from '../views/daftarkos.jsx';
@@ -37,6 +38,10 @@ import Peraturan from '../views/peraturan.jsx';
 import SemuaKamar from '../views/semuakamar.jsx';
 import PeraturanLanjut from '../views/peraturanlanjut.jsx';
 import DetailKamar from '../views/detailkamar.jsx';
+import DetailKamarUser from '../views/detailkamaruser.jsx';
+import Berita from '../views/berita.jsx';
+import Pembayaran from '../views/pembayaran.jsx';
+import Invoice from '../views/invoice.jsx';
 //profile
 import Profile from '../views/profile.jsx';
 import EditProfile from '../views/editprofile.jsx';
@@ -48,7 +53,7 @@ function RoutesIndex() {
       <Route path="/" element={<Home />} />
       <Route path="/admin/homeadmin" element={<HomeAdmin />} />
       <Route path="/admin/dashboardpartner" element={<DashboardPartner />} />
-      <Route path="/homeuser" element={<HomeUser />} />
+      
       <Route path="/admin/kospartner" element={<KosPartner />} />
       <Route path="/admin/kantinpartner" element={<KantinPartner />} />
       <Route path="/admin/laundrypartner" element={<LaundryPartner />} />
@@ -56,15 +61,18 @@ function RoutesIndex() {
       <Route path="/admin/daftarlaundry" element={<DaftarLaundry />} />
       <Route path="/admin/tambahpenghunikos" element={<TambahPenghuniKos />} />
 
-
-
+      {/* user */}
+      <Route path="/user/homeuser" element={<HomeUser />} />
 
       {/* route "/posts" */}
       <Route path="/cari" element={<Cari />} />
 
+            {/* login */}
             <Route path="/login" element={<Login />} />
-            <Route path="/loginmitra" element={<LoginMitra />} />
-            <Route path="/loginpencarikost" element={<LoginPencariKost/>} />
+            <Route path="/admin/loginmitra" element={<LoginMitra />} />
+            <Route path="/user/loginpencarikost" element={<LoginPencariKost/>} />
+
+
             <Route path="/daftarmitra" element={<DaftarMitra />} />
             <Route path="/daftarpenyewakost" element={<DaftarPenyewaKost/>} />
             <Route path="/daftarkos" element={<DaftarKos/>} />
@@ -77,6 +85,10 @@ function RoutesIndex() {
             <Route path="/semuakamar" element={<SemuaKamar/>} />
             <Route path="/peraturanlanjut" element={<PeraturanLanjut/>} />
             <Route path="/detailkamar" element={<DetailKamar/>} />
+            <Route path="/detailkamaruser" element={<DetailKamarUser/>} />
+            <Route path="/berita" element={<Berita/>} />
+            <Route path="/pembayaran" element={<Pembayaran/>} />
+            <Route path="/invoice" element={<Invoice/>} />
             {/* profile */}
             <Route path="/profile" element={<Profile/>} />
             <Route path="/editprofile" element={<EditProfile/>} />

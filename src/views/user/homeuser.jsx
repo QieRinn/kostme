@@ -1,11 +1,31 @@
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 import { Link } from "react-router-dom";
+
 export default function Homeuser() {
+
+  const isAuthenticated = !!Cookies.get('authuser');
+
+  const navigate = useNavigate();
+
+  const handleLogout = () => { 
+    Cookies.remove('authuser');
+    navigate('/user/loginpencarikost'); 
+  };
+
+  if (!isAuthenticated) {
+    navigate('/user/loginpencarikost'); 
+    return null; // Return null to prevent rendering anything else
+  }
+  else
+  {
+
   return (
-    <div className="home">
+    <div className="homeuser">
     <nav className="fixed top-0 left-0 right-0 flex justify-center h-[100px] bg-white z-50">
         <div className="w-[1240px] flex items-center justify-between">
         <div className="flex items-center w-[577px] justify-between">
-          <img src="images/logo.png" alt="" width="186" height="42" />
+          <img src="../images/logo.png" alt="" width="186" height="42" />
           <div className="flex w-[340px] justify-between">
             <p>
                 <Link to="/homeuser" className="">
@@ -22,11 +42,12 @@ export default function Homeuser() {
                 Berita
                 </Link>
             </p>
-            <p>
+            
                 <Link to="/contact" className="">
                 Kontak
                 </Link>
-            </p>
+                <button onClick={handleLogout}>Logout</button>
+            
           </div>
         </div>
         <div className=""> 
@@ -333,4 +354,5 @@ export default function Homeuser() {
       <div className="col-span-3"></div>
     </div>
   );
+  }
 }

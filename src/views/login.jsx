@@ -17,7 +17,7 @@ export default function Login() {
         <div className="bg-slate-200 mt-5 w-64 h-10 rounded-md flex items-center mb-6">
         <img src={"./images/Host 1.png"} alt="KostMe Logo" className="mr-4"  style={{ width: "40px", marginLeft: "10px" }}  />
           <p className="leading-10 ml-4">
-            <Link to="/loginpencarikost" className="">
+            <Link to="/user/loginpencarikost" className="">
               Pencari Kost
             </Link>
           </p>
@@ -26,7 +26,7 @@ export default function Login() {
         <div className="bg-slate-200 mt-5 w-64 h-10 rounded-md flex items-center mb-6">
         <img src={"./images/Host.png"} alt="KostMe Logo" className="mr-4"  style={{ width: "40px", marginLeft: "10px" }}  />
           <p className="leading-10 ml-4">
-            <Link to="/loginmitra" className="">
+            <Link to="/admin/loginmitra" className="">
               Mitra
             </Link>
           </p>

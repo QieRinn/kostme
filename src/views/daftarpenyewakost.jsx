@@ -1,5 +1,33 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect  } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+//import api
+import api from "../api";
+
 export default function DaftarPenyewaKost() {
+
+  const navigate = useNavigate();
+  const [nama, setNama] = useState('');
+  const [hp, setHP] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const simpanData = (e) => {
+    e.preventDefault();
+
+    api.get("tambahuser/"+email+"/"+password+"/"+nama+"/"+hp).then((response) => {
+      //assign response data to state "posts"
+      alert(response.data.message);
+      navigate('/user/loginpencarikost');
+    }, (error) => {
+      alert(error);
+    });
+
+    
+
+  };
+
   return (
     <div className="daftarmitra bg-cyan-700 pt-20 pb-24 flex justify-center">
       <div className="w-96">
@@ -8,7 +36,7 @@ export default function DaftarPenyewaKost() {
         </div>
 
         <div className="bg-slate-200 w-96 mt-5 rounded-md p-12 ">
-          <form action="/">
+          <form onSubmit={simpanData}>
             <label
               for="name"
               className="block text-sm font-medium leading-6 text-gray-900"
@@ -22,6 +50,8 @@ export default function DaftarPenyewaKost() {
                 id="nama"
                 className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 placeholder="Masukkan Nama Lengkap"
+                value={nama}
+                onChange={(e) => setNama(e.target.value)}
               />
             </div>
 
@@ -35,9 +65,11 @@ export default function DaftarPenyewaKost() {
               <input
                 type="text"
                 name="angka"
-                pattern="[0-9]"
+                
                 className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 placeholder="Nomor Handphone Aktif"
+                value={hp}
+                onChange={(e) => setHP(e.target.value)}
               />
             </div>
 
@@ -54,6 +86,8 @@ export default function DaftarPenyewaKost() {
                 id="email"
                 className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 placeholder="Masukkan Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
 
@@ -70,6 +104,8 @@ export default function DaftarPenyewaKost() {
                 id="password"
                 className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 placeholder="Minimal 8 Karakter"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
 
@@ -102,7 +138,7 @@ export default function DaftarPenyewaKost() {
             <div className="text-center w-full">
               <input
                 type="submit"
-                value="Masuk"
+                value="Simpan"
                 className="bg-cyan-700 py-1 px-5 rounded-md text-white"
               />
             </div>
@@ -113,7 +149,7 @@ export default function DaftarPenyewaKost() {
               <p className=" text-xs text-center ">
                 Sudah punya akun KostMe?
                 <Link
-                  to="/loginpencarikost"
+                  to="/user/loginpencarikost"
                   className="no-underline hover:underline text-cyan-600"
                 >
                   Masuk Disini

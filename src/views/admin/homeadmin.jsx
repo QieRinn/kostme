@@ -10,11 +10,11 @@ export default function HomeAdmin() {
 
   const handleLogout = () => { 
     Cookies.remove('auth');
-    navigate('/loginmitra'); 
+    navigate('/admin/loginmitra'); 
   };
 
   if (!isAuthenticated) {
-    navigate('/loginmitra'); 
+    navigate('/admin/loginmitra'); 
     return null; // Return null to prevent rendering anything else
   }
   else
@@ -24,7 +24,7 @@ export default function HomeAdmin() {
   return (
     <div className="homeadmin">
 
-<nav className="fixed top-0 left-0 right-0 flex justify-center h-[100px] bg-white z-50">
+      <nav className="fixed top-0 left-0 right-0 flex justify-center h-[100px] bg-white z-50">
         <div className="w-[1240px] flex items-center justify-between mr-16">
           <div className="flex items-center w-[577px] justify-between">
             <img src="../images/logo.png" alt="" width="186" height="42" />
@@ -88,6 +88,25 @@ export default function HomeAdmin() {
 
         <div className="grid grid-cols-3 gap-4">
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
+            {/* {
+            posts.length > 0
+            ?posts.map((post, index) => (
+
+              <div className="rounded-lg h-80 shadow-lg mb-10">
+                <img className="rounded-lg object-fill h-48 w-full" src="images/kamar.jpg" />
+                <div className="p-5">
+                  <p>{post.kamar}</p>
+                  <p>{post.harga}</p>
+                  <p>{post.alamat}</p>
+                  <hr />
+                  <p>{post.pemilik}</p>
+                  </div>
+                  </div>
+              ))
+              : <div>Data tidak tersedia </div>
+            } */}
+                  
+            <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
               src="../images/kamar.jpg"
@@ -98,6 +117,7 @@ export default function HomeAdmin() {
               <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
               <hr />
               <p>Pak Ikhmar</p>
+            </div>
             </div>
           </div>
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
@@ -164,8 +184,9 @@ export default function HomeAdmin() {
               <hr />
               <p>Pak Ikhmar</p>
             </div>
-          </div>
-        </div>
+          </div> 
+
+        </div> 
 
         <a
           href="/semuakamar"

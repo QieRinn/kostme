@@ -184,19 +184,23 @@ export default function Home() {
         <div className="grid grid-cols-3 gap-5">
           {posts.length > 0 ? (
             posts.map((post, index) => (
+              <Link to="/detailkamaruser" className="">
               <div className="rounded-lg h-80 shadow-lg mt-5 ml-8">
                 <img
                   className="rounded-lg object-fill h-48 w-full"
                   src="images/kamar.jpg"
                 />
                 <div className="p-5 ">
-                  <p>{post.namakamar}</p>
+                  <p><b>
+                  {post.namakamar}
+                  </b></p>
                   <p>{post.harga}</p>
                   <p>{post.alamat}</p>
                   <hr />
                   <p>{post.pemilik}</p>
                 </div>
               </div>
+              </Link>
             ))
           ) : (
             <div></div>

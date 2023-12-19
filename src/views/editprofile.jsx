@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
-export default function Profile() {
+export default function EditProfile() {
   return (
-    <div className="profile">
+    <div className="editprofile">
 
 <div class="bg-gray-100">
     <div class="container mx-auto my-5">

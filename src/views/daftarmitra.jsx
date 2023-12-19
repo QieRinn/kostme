@@ -18,9 +18,12 @@ export default function DaftarMitra() {
     api.get("tambahadmin/"+email+"/"+password+"/"+nama+"/"+hp).then((response) => {
       //assign response data to state "posts"
       alert(response.data.message);
+      navigate('/admin/loginmitra');
+    }, (error) => {
+      alert(error);
     });
 
-    navigate('/loginmitra');
+    
 
   };
   
@@ -145,7 +148,7 @@ export default function DaftarMitra() {
               <p className=" text-xs text-center ">
                 Sudah punya akun KostMe?
                 <Link
-                  to="/loginmitra"
+                  to="/admin/loginmitra"
                   className="no-underline hover:underline text-cyan-600"
                 >
                   Masuk Disini
