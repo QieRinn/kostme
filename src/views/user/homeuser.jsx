@@ -13,12 +13,12 @@ export default function Homeuser() {
     navigate('/user/loginpencarikost'); 
   };
 
-  if (!isAuthenticated) {
-    navigate('/user/loginpencarikost'); 
-    return null; // Return null to prevent rendering anything else
-  }
-  else
-  {
+  // if (!isAuthenticated) {
+  //   navigate('/user/loginpencarikost'); 
+  //   return null; // Return null to prevent rendering anything else
+  // }
+  // else
+  // {
 
   return (
     <div className="homeuser">
@@ -28,7 +28,7 @@ export default function Homeuser() {
           <img src="../images/logo.png" alt="" width="186" height="42" />
           <div className="flex w-[340px] justify-between">
             <p>
-                <Link to="/homeuser" className="">
+                <Link to="/user/homeuser" className="">
                 Beranda
                 </Link>
             </p>
@@ -38,12 +38,12 @@ export default function Homeuser() {
                 </Link>
             </p>
             <p>
-                <Link to="/daftarmitra" className="">
+                <Link to="/user/berita" className="">
                 Berita
                 </Link>
             </p>
             
-                <Link to="/contact" className="">
+                <Link to="/user/contact" className="">
                 Kontak
                 </Link>
                 <button onClick={handleLogout}>Logout</button>
@@ -61,7 +61,7 @@ export default function Homeuser() {
 
       <div className="bgimg pt-36">
         <h1 className="font-bold text-white text-left text-xl mt-5 ml-8">
-          bingung cara cari kos impian
+          Bingung cara cari kos impian
         </h1>
         <h1 className="font-bold text-white text-left text-3xl mt-5 ml-8 drop-shadow-lg">
           {" "}
@@ -84,10 +84,11 @@ export default function Homeuser() {
         </div>
 
         <div className="grid grid-cols-3 gap-4">
+        <Link to="/user/detailkamaruser" className="">
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar4.jpg"
+              src="../images/kamar4.jpg"
             />
             <div className="p-5">
               <p>Kostme 1 Depok</p>
@@ -97,10 +98,11 @@ export default function Homeuser() {
               <p>Pak Ikhmar</p>
             </div>
           </div>
+          </Link>
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/gambar kost 2.JPG"
+              src="../images/gambar kost 2.JPG"
             />
             <div className="p-5">
               <p>Kostme 2 Depok</p>
@@ -113,7 +115,7 @@ export default function Homeuser() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/gambar kost 3.JPG"
+              src="../images/gambar kost 3.JPG"
             />
             <div className="p-5">
               <p>Kos Pelangi</p>
@@ -126,7 +128,7 @@ export default function Homeuser() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/gambar kost 4.JPG"
+              src="../images/gambar kost 4.JPG"
             />
             <div className="p-5">
               <p>Kos Pelangi</p>
@@ -139,7 +141,7 @@ export default function Homeuser() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar3.jpg"
+              src="../images/kamar3.jpg"
             />
             <div className="p-5">
               <p>Kos The Raid</p>
@@ -152,7 +154,7 @@ export default function Homeuser() {
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="images/kamar2.jpg"
+              src="../images/kamar2.jpg"
             />
             <div className="p-5">
               <p>Kos The Raid</p>
@@ -238,7 +240,7 @@ export default function Homeuser() {
             </ul>
           </div>
           <div>
-            <img className="object-fill w-70 h-64" src="images/kamar.jpg" />
+            <img className="object-fill w-70 h-64" src="../images/kamar2.jpg" />
           </div>
         </div>
 
@@ -266,7 +268,7 @@ export default function Homeuser() {
         <div className="rounded-lg shadow-lg mb-10 ml-3">
           <img
             className="rounded-lg object-fill h-50 w-full"
-            src="images/mitra 1.jpeg"
+            src="../images/mitra 1.jpeg"
           />
           <div className="p-5">
             <p>Pak Ikhmar</p>
@@ -283,7 +285,7 @@ export default function Homeuser() {
         <div className="rounded-lg shadow-lg mb-10">
           <img
             className="rounded-lg object-fill h-50 w-full"
-            src="images/mitra 2.jpeg"
+            src="../images/mitra 2.jpeg"
           />
           <div className="p-5">
             <p>Bu Amelia</p>
@@ -299,7 +301,7 @@ export default function Homeuser() {
         <div className="rounded-lg shadow-lg mb-10">
           <img
             className="rounded-lg object-fill h-50 w-full"
-            src="images/mitra 3.jpeg"
+            src="../images/mitra 3.jpeg"
           />
           <div className="p-5">
             <p>Pak Ronald</p>
@@ -354,5 +356,5 @@ export default function Homeuser() {
       <div className="col-span-3"></div>
     </div>
   );
-  }
+  // }
 }

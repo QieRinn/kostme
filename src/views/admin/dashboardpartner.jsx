@@ -119,46 +119,19 @@ export default function DashboardPartner() {
         </div>
       </aside>
 
-      <div className="p-4 sm:ml-64">
-        Lorem ipsum
+      <div className="p-4 ml-64 ">
+        Dashboard
         <hr />
-        <p>Lorem, ipsum dolor.</p>
-        <div className="grid gap-4 grid-cols-3 grid-rows-3 mt-3">
-          <a
-            // href="#"
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-          >
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Revenue
-            </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              RP.12.000.000
-            </p>
-          </a>
-          <a
-            // href="#"
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-          >
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Pending
-            </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              RP.4.000.000
-            </p>
-          </a>
-          <a
-            // href="#"
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-          >
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Balance
-            </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              RP.8.000.000
-            </p>
-          </a>
-        </div>
+        <p></p>
+        <div className="w-32 bg-slate-200 rounded-md text-black mt-5">
+        <Link to="/detailkamar" className="">
+              <img
+              className="rounded-lg object-fill h-32 w-full"
+              src="../images/foto1.png"/>
+        </Link>
+            </div>
       </div>
+      
     </div>
   );
 }

@@ -71,7 +71,9 @@ export default function KantinPartner() {
                 <span>
                   <Link to="/admin/kospartner" className="flex-1 ms-3 whitespace-nowrap"> Kos </Link>
                 </span>
-                
+                <span className="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
+                  
+                </span>
               </a>
             </li>
             <li>
@@ -118,25 +120,18 @@ export default function KantinPartner() {
       </aside>
 
       <div className="p-4 sm:ml-64">
-        Search
+        Kantin
         <hr />
-        <p>Lorem, ipsum dolor.</p>
+        <p>Tambah Kantin.</p>
         <div className="flex justify-start m-3">
 
         <div>
-            <Link to="/admin/daftarkantin"
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            </Link>
+        <a href="/admin/daftarkantin" className="w-32 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+              <img className="object-scale-down h-5 w-5 m-auto" src={plus} alt="" />
+            </a>
           </div>
-          <div>
-            <img className="object-scale-down h-5 w-5" src={plus} alt="" />
-          </div>
-          {/* <a
-            href="#daftarkos"
-            className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-          >
-            <img className="object-scale-down h-5 w-5" src={plus} alt="" />
-          </a> */}
+          
+          
         </div>
       </div>
     </div>

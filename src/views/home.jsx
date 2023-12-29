@@ -43,7 +43,7 @@ export default function Home() {
                   </Link>
               </p>
               <p>
-                  <Link to="/daftarmitra" className="">
+                  <Link to="/berita" className="">
                   Berita
                   </Link>
               </p>
@@ -66,7 +66,7 @@ export default function Home() {
 
       <div className="bgimg pt-36">
         <h1 className="font-bold text-white text-left text-xl mt-5 ml-8">
-          bingung cara cari kos impian
+          Bingung cara cari kos impian
         </h1>
         <h1 className="font-bold text-white text-left text-3xl mt-5 ml-8 drop-shadow-lg">
           {" "}

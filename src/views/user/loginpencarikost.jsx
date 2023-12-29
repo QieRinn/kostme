@@ -43,9 +43,12 @@ export default function LoginPencariKost() {
   };
 
   return (
+    
     <div className="loginpencarikost bg-cyan-700 pt-20 pb-24 flex justify-center min-h-screen">
-      
       <div className="w-96">
+      <Link to="/" className="">
+            <img src="../images/Vector.png" className="object-fill mt-1 ml-2" />
+            </Link> 
         <div>
           <h1 className="text-white text-center text-3xl ">Masuk</h1>
         </div>

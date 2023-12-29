@@ -119,9 +119,9 @@ export default function KosPartner() {
       </aside>
 
       <div className="p-4 sm:ml-64">
-        Search
+        Kost
         <hr />
-        <p>Lorem, ipsum dolor.</p>
+        <p>Tambah Kost</p>
         <div className="flex justify-start m-3">
 
         

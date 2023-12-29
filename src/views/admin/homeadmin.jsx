@@ -13,29 +13,38 @@ export default function HomeAdmin() {
     navigate('/admin/loginmitra'); 
   };
 
-  if (!isAuthenticated) {
-    navigate('/admin/loginmitra'); 
-    return null; // Return null to prevent rendering anything else
-  }
-  else
-  {
+  // if (!isAuthenticated) {
+  //   navigate('/admin/loginmitra'); 
+  //   return null; // Return null to prevent rendering anything else
+  // }
+  // else
+  // {
 
 
   return (
     <div className="homeadmin">
+      
 
       <nav className="fixed top-0 left-0 right-0 flex justify-center h-[100px] bg-white z-50">
         <div className="w-[1240px] flex items-center justify-between mr-16">
           <div className="flex items-center w-[577px] justify-between">
             <img src="../images/logo.png" alt="" width="186" height="42" />
             <div className="flex w-[340px] justify-between ">
-              <p>
-                <Link to="/" className="">
-                  Beranda
+            <p>
+                <Link to="/homeuser" className="">
+                Beranda
                 </Link>
-              </p>
-              <p>Mitra</p>
-              <p>Berita</p>
+            </p>
+            <p>
+                <Link to="/daftarmitra" className="">
+                Mitra
+                </Link>
+            </p>
+            <p>
+                <Link to="/berita" className="">
+                Berita
+                </Link>
+            </p>
               <Link to="/contact" className="">
                   Kontak
                 </Link>
@@ -64,7 +73,7 @@ export default function HomeAdmin() {
       
       <div className="bgimg pt-36">
         <h1 className="font-bold text-white text-left text-xl mt-5 ml-8">
-          bingung cara cari kos impian
+          Bingung cara cari kos impian
         </h1>
         <h1 className="font-bold text-white text-left text-3xl mt-5 ml-8 drop-shadow-lg">
           {" "}
@@ -87,43 +96,11 @@ export default function HomeAdmin() {
         </div>
 
         <div className="grid grid-cols-3 gap-4">
+        <Link to="/user/detailkamaruser" className="">
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
-            {/* {
-            posts.length > 0
-            ?posts.map((post, index) => (
-
-              <div className="rounded-lg h-80 shadow-lg mb-10">
-                <img className="rounded-lg object-fill h-48 w-full" src="images/kamar.jpg" />
-                <div className="p-5">
-                  <p>{post.kamar}</p>
-                  <p>{post.harga}</p>
-                  <p>{post.alamat}</p>
-                  <hr />
-                  <p>{post.pemilik}</p>
-                  </div>
-                  </div>
-              ))
-              : <div>Data tidak tersedia </div>
-            } */}
-                  
-            <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="../images/kamar.jpg"
-            />
-            <div className="p-5">
-              <p>Kostme 1 Depok</p>
-              <p>800.000</p>
-              <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
-              <hr />
-              <p>Pak Ikhmar</p>
-            </div>
-            </div>
-          </div>
-          <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
-            <img
-              className="rounded-lg object-fill h-48 w-96"
-              src="../images/kamar.jpg"
+              src="../images/kamar4.jpg"
             />
             <div className="p-5">
               <p>Kostme 1 Depok</p>
@@ -133,60 +110,73 @@ export default function HomeAdmin() {
               <p>Pak Ikhmar</p>
             </div>
           </div>
+          </Link>
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="../images/kamar.jpg"
+              src="../images/gambar kost 2.JPG"
             />
             <div className="p-5">
-              <p>Kostme 1 Depok</p>
-              <p>800.000</p>
+              <p>Kostme 2 Depok</p>
+              <p>1.000.000</p>
               <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
               <hr />
               <p>Pak Ikhmar</p>
+            </div>
+          </div>
+          <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
+            <img
+              className="rounded-lg object-fill h-48 w-96"
+              src="../images/gambar kost 3.JPG"
+            />
+            <div className="p-5">
+              <p>Kos Pelangi</p>
+              <p>800.000</p>
+              <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
+              <hr />
+              <p>Bu Amelia</p>
             </div>
           </div>
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10 ml-3">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="../images/kamar.jpg"
+              src="../images/gambar kost 4.JPG"
             />
             <div className="p-5">
-              <p>Kostme 1 Depok</p>
-              <p>800.000</p>
+              <p>Kos Pelangi</p>
+              <p>850.000</p>
               <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
               <hr />
-              <p>Pak Ikhmar</p>
+              <p>Bu Amelia</p>
             </div>
           </div>
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="../images/kamar.jpg"
+              src="../images/kamar3.jpg"
             />
             <div className="p-5">
-              <p>Kostme 1 Depok</p>
+              <p>Kos The Raid</p>
               <p>800.000</p>
               <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
               <hr />
-              <p>Pak Ikhmar</p>
+              <p>Pak Ronald</p>
             </div>
           </div>
           <div className="rounded-lg h-80 w-96 shadow-lg mb-10">
             <img
               className="rounded-lg object-fill h-48 w-96"
-              src="../images/kamar.jpg"
+              src="../images/kamar2.jpg"
             />
             <div className="p-5">
-              <p>Kostme 1 Depok</p>
-              <p>800.000</p>
+              <p>Kos The Raid</p>
+              <p>900.000</p>
               <p>Jl. Jambu II. RT.005 RW.002 Depok Jawa Barat</p>
               <hr />
-              <p>Pak Ikhmar</p>
+              <p>Pak Ronald</p>
             </div>
-          </div> 
-
-        </div> 
+          </div>
+        </div>
 
         <a
           href="/semuakamar"
@@ -371,6 +361,6 @@ export default function HomeAdmin() {
       <div className="col-span-3"></div>
     </div>
   );
-  }
+  // }
 }
 

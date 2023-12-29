@@ -38,13 +38,18 @@ import Peraturan from '../views/peraturan.jsx';
 import SemuaKamar from '../views/semuakamar.jsx';
 import PeraturanLanjut from '../views/peraturanlanjut.jsx';
 import DetailKamar from '../views/detailkamar.jsx';
-import DetailKamarUser from '../views/detailkamaruser.jsx';
 import Berita from '../views/berita.jsx';
 import Pembayaran from '../views/pembayaran.jsx';
 import Invoice from '../views/invoice.jsx';
 //profile
 import Profile from '../views/profile.jsx';
 import EditProfile from '../views/editprofile.jsx';
+// user
+import BeritaUser from '../views/user/beritauser.jsx';
+import ContactUser from '../views/user/contactuser.jsx';
+import DetailKamarUser from '../views/user/detailkamaruser.jsx';
+import PembayaranUser from '../views/user/pembayaranuser.jsx';
+import InvoiceUser from '../views/user/invoiceuser.jsx';
 
 function RoutesIndex() {
   return (
@@ -63,6 +68,11 @@ function RoutesIndex() {
 
       {/* user */}
       <Route path="/user/homeuser" element={<HomeUser />} />
+      <Route path="/user/berita" element={<BeritaUser />} />
+      <Route path="/user/contact" element={<ContactUser />} />
+      <Route path="/user/detailkamaruser" element={<DetailKamarUser />} />
+      <Route path="/user/pembayaranuser" element={<PembayaranUser />} />
+      <Route path="/user/invoiceuser" element={<InvoiceUser />} />
 
       {/* route "/posts" */}
       <Route path="/cari" element={<Cari />} />
@@ -92,6 +102,8 @@ function RoutesIndex() {
             {/* profile */}
             <Route path="/profile" element={<Profile/>} />
             <Route path="/editprofile" element={<EditProfile/>} />
+           
+           
 
 
 
